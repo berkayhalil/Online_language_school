@@ -1,0 +1,140 @@
+:root {
+    --main-body-light-color: #FFFFFF; 
+    --text-color: white;
+    --main-body-dark-color: #083E85; /*#083E85*/
+    
+}
+  
+body{
+  margin: 0;
+}
+
+/*---nav-bar-setyles----*/
+.topnav {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  width: 100%; 
+  z-index: 1000; 
+  overflow: hidden;
+  background-color: var(--main-body-dark-color);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transition: max-height 0.4s ease-in-out, min-height 0.4s ease-in-out, background-color 0.3s ease-in-out;
+    max-height: 65px; /* Collapsed state */
+    min-height: 65px; /* Collapsed state */
+}
+
+.topnav.responsive{
+ max-height: 400px; 
+ min-height: 325px;
+ 
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 22px 23px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+}
+
+#navbar-right{
+  float: right;
+    
+}
+
+.topnav a:hover {
+  background-color: #abcedb;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+/* For smaller screens (less than 600px) */
+@media screen and (max-width: 600px) {
+  /* Hide all links except the icon initially */
+  .topnav #navbar-right a {
+    display: none;
+  }
+
+  /* Keep the icon at the top-right */
+  .topnav a.icon {
+    display: block;
+    position: absolute; /* Fixes it in the top-right */
+    right: 5px;
+    top: 5px;
+    margin-right: -11px;
+    margin-top: -11px;
+    font-size:20px;
+    
+  }
+
+  /* When responsive class is added, display the links below the icon */
+  .topnav.responsive #navbar-right a {
+    display: block;
+    text-align: right;
+    overflow: none;
+    width: 92%; /* Full width for the menu items */
+  }
+
+  
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 5px;
+    top:5px;
+    margin-right: -11px;
+    margin-top: -11px;
+  }
+
+  
+  .topnav.responsive #navbar-right {
+    float: none;
+    display: block;
+    width: 100%;
+  }
+}
+
+i{
+  margin-right:3px ;
+}
+
+img{
+  margin-top: 6px;
+  margin-left: 4px;
+}
+
+/*Home section style */
+.home-section{
+  margin-top: 65px;
+  scroll-margin-top: 65px;
+}
+
+#h-home{
+  margin-top: 200px;
+  padding:5px;
+  text-align: center;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: var(--main-body-light-color);
+  background-color: var(--main-body-dark-color);
+  border-radius:15px;
+}
+
+
+
+
+
+
+
+
+
+
