@@ -22,3 +22,5 @@ window.addEventListener('resize', function() {
         x.className = "topnav"; // Collapse the menu if screen width is greater than 600px
     }
 });
+
+
