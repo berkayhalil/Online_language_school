@@ -29,9 +29,12 @@
   }
   
   .topnav.responsive{
-  max-height: 400px; 
+  max-height: 500px; 
   min-height: 325px;
-  
+  }
+
+  .topnav.responsive #phone-icon span{
+    display: inline;
   }
   
   .topnav a {
@@ -64,7 +67,7 @@
   }
   
   /* For smaller screens (less than 600px) */
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 738px) {
   /* Hide all links except the icon initially */
   .topnav #navbar-right a {
     display: none;

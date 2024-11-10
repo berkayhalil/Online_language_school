@@ -1,3 +1,5 @@
+
+/*konsultacia button*/
 $speed: 0.5s;
 
 .btn-flip{
@@ -13,6 +15,7 @@ $speed: 0.5s;
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 5px;
+  font-weight: bold;
   
   &:hover{
     
@@ -115,4 +118,16 @@ $speed: 0.5s;
       transform: translateY(0) rotateX(0);
     }
   }
+}
+
+
+#phone-icon{
+font-size: 20px;
+margin-top: -2px;
+}
+
+@media screen and (max-width: 871px) {
+#phone-icon span{
+  display:none;
+}
 }

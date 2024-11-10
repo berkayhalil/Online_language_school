@@ -1,3 +1,4 @@
+/*konsultacia button*/
 .btn-flip {
   position: absolute;
   right: 25px;
@@ -11,6 +12,7 @@
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 5px;
+  font-weight: bold;
 }
 .btn-flip:hover:after {
   opacity: 1;
@@ -100,6 +102,16 @@
     transform: translateY(0) rotateX(0);
   }
 }
+#phone-icon {
+  font-size: 20px;
+  margin-top: -2px;
+}
+
+@media screen and (max-width: 871px) {
+  #phone-icon span {
+    display: none;
+  }
+}
 :root {
   --main-body-light-color: #FFFF;
   --text-color: white;
@@ -129,8 +141,12 @@ body {
 }
 
 .topnav.responsive {
-  max-height: 400px;
+  max-height: 500px;
   min-height: 325px;
+}
+
+.topnav.responsive #phone-icon span {
+  display: inline;
 }
 
 .topnav a {
@@ -161,7 +177,7 @@ body {
 }
 
 /* For smaller screens (less than 600px) */
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 738px) {
   /* Hide all links except the icon initially */
   .topnav #navbar-right a {
     display: none;
