@@ -1,35 +1,136 @@
-:root {
-    --main-body-light-color: #FFFFFF; 
-    --text-color: white;
-    --main-body-dark-color: #083E85; /*#083E85*/
-    --main-text-background-color: rgba(8, 62, 133, 0.8);
-    
+.btn-flip {
+  position: absolute;
+  right: 25px;
+  top: 193px;
+  outline: 0;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  letter-spacing: 1px;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
-  
-body{
+.btn-flip:hover:after {
+  opacity: 1;
+  transform: translateY(0) rotateX(0);
+}
+.btn-flip:hover:before {
+  opacity: 0;
+  transform: translateY(50%) rotateX(90deg);
+}
+.btn-flip:after {
+  top: 0;
+  left: 0;
+  opacity: 0;
+  width: 100%;
+  color: var(--main-body-light-color);
+  display: block;
+  transition: 0.5s;
+  position: absolute;
+  background: var(--main-text-background-color);
+  content: attr(data-back);
+  transform: translateY(-50%) rotateX(90deg);
+  border-radius: 5px;
+}
+.btn-flip:before {
+  top: 0;
+  left: 0;
+  opacity: 1;
+  color: var(--main-body-light-color);
+  display: block;
+  padding: 0 20px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: var(--main-body-dark-color);
+  content: attr(data-front);
+  transform: translateY(0) rotateX(0);
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 800px) {
+  .btn-flip {
+    position: absolute;
+    right: 10px;
+    top: 120px;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  .btn-flip:hover:after {
+    opacity: 1;
+    transform: translateY(0) rotateX(0);
+  }
+  .btn-flip:hover:before {
+    opacity: 0;
+    transform: translateY(50%) rotateX(90deg);
+  }
+  .btn-flip:after {
+    top: 0;
+    left: 0;
+    opacity: 0;
+    width: 100%;
+    color: white;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: var(--main-text-background-color);
+    content: attr(data-back);
+    transform: translateY(-50%) rotateX(90deg);
+  }
+  .btn-flip:before {
+    top: 0;
+    left: 0;
+    opacity: 1;
+    color: var(--main-body-light-color);
+    display: block;
+    padding: 0 15px;
+    line-height: 40px;
+    transition: 0.5s;
+    position: relative;
+    background: var(--main-body-dark-color);
+    content: attr(data-front);
+    transform: translateY(0) rotateX(0);
+  }
+}
+:root {
+  --main-body-light-color: #FFFF;
+  --text-color: white;
+  --main-body-dark-color: #083E85; /*#083E85*/
+  --main-text-background-color: rgba(8, 62, 133, 0.8);
+}
+
+body {
   margin: 0;
+  font-family: sans-serif;
 }
 
 /*---nav-bar-setyles----*/
 .topnav {
-  position: fixed; 
-  top: 0; 
-  left: 0; 
-  width: 100%; 
-  z-index: 1000; 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
   overflow: hidden;
   background-color: var(--main-body-dark-color);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   transition: max-height 0.4s ease-in-out, min-height 0.4s ease-in-out, background-color 0.3s ease-in-out;
-    max-height: 65px; /* Collapsed state */
-    min-height: 65px; /* Collapsed state */
+  max-height: 65px; /* Collapsed state */
+  min-height: 65px; /* Collapsed state */
 }
 
-.topnav.responsive{
- max-height: 400px; 
- min-height: 325px;
- 
+.topnav.responsive {
+  max-height: 400px;
+  min-height: 325px;
 }
 
 .topnav a {
@@ -42,20 +143,18 @@ body{
   font-size: 16px;
   font-weight: bold;
   border-radius: 5px;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; 
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-#navbar-right{
+#navbar-right {
   float: right;
-    
 }
 
 .topnav a:hover {
   background-color: #abcedb;
   color: black;
 }
-
 
 .topnav .icon {
   display: none;
@@ -67,7 +166,6 @@ body{
   .topnav #navbar-right a {
     display: none;
   }
-
   /* Keep the icon at the top-right */
   .topnav a.icon {
     display: block;
@@ -76,10 +174,8 @@ body{
     top: 5px;
     margin-right: -11px;
     margin-top: -11px;
-    font-size:20px;
-    
+    font-size: 20px;
   }
-
   /* When responsive class is added, display the links below the icon */
   .topnav.responsive #navbar-right a {
     display: block;
@@ -87,106 +183,104 @@ body{
     overflow: none;
     width: 92%; /* Full width for the menu items */
   }
-
-  
   .topnav.responsive a.icon {
     position: absolute;
     right: 5px;
-    top:5px;
+    top: 5px;
     margin-right: -11px;
     margin-top: -11px;
   }
-
-  
   .topnav.responsive #navbar-right {
     float: none;
     display: block;
     width: 100%;
   }
 }
-
-i{
-  margin-right:3px ;
+i {
+  margin-right: 3px;
 }
 
-#logo-id{
+#logo-id {
   margin-top: 5px;
   margin-left: 4px;
-  width: 130px; 
-  height: auto; 
+  width: 130px;
+  height: auto;
 }
 
-
 .home-section {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  position: relative;
+  display: flex; /* Use Flexbox */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text within the paragraph */
   margin-top: -47px;
   scroll-margin-top: 65px;
-  background-image: url('pexels-tima-miroshnichenko2-6671419.jpg'); /* Background image URL */ /* Cover the entire section */
-  background-size:cover;
+  background-image: url("pexels-tima-miroshnichenko2-6671419.jpg"); /* Background image */
+  background-size: cover; /* Cover the entire section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
-  height: 742px; /* Add some top and bottom padding */
+  height: 742px; /* Set a fixed height */
   color: #ffffff; /* Set default text color to white for visibility */
 }
 
 .home-section::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(105, 101, 101, 0.5); 
-  z-index: 1; 
+  background-color: rgba(105, 101, 101, 0.5);
+  z-index: 1;
 }
 
 .home-section::after {
-  content: '';
+  content: "";
   position: absolute;
-  top: 45px; 
-  left: 40px; 
-  width: 130px; 
-  height: 130px; 
-  background-image: url('long-black-curved-arrows2-set-260nw-2482787799.png'); 
-  background-size: contain; 
-  background-position: center; 
-  background-repeat: no-repeat; 
-  z-index: 2; 
+  top: 85px;
+  left: 40px;
+  width: 130px;
+  height: 130px;
+  background-image: url("long-black-curved-arrows2-set-260nw-2482787799.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 2;
   background-color: transparent;
   animation: fadeInUp 2s ease-out forwards;
 }
 
- #school{
-  padding-top: 12px;
+#school {
+  padding-top: 15px;
   position: absolute;
-  top: 85px; 
-  left: 168px; 
-  width: 180px; 
-  height: 65px; 
-  z-index: 3; 
+  top: 120px;
+  left: 170px;
+  width: 180px;
+  height: 65px;
+  z-index: 3;
   font-size: 21px;
-  font-weight:bolder;
-  background-color:var(--main-text-background-color);
+  font-weight: bolder;
+  background-color: var(--main-text-background-color);
   border-radius: 50px;
   text-align: center;
   animation: fadeInUp 2s ease-out forwards;
 }
 
-#p-home {
-  margin-top: 410px;
+#h-home {
+  position: absolute;
+  margin-bottom: -250px;
   padding: 15px;
   text-align: center;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   color: var(--main-body-light-color);
-  background-color:var(--main-text-background-color);
+  background-color: var(--main-text-background-color);
   border-radius: 15px;
   max-width: 890px;
   font-size: 24px;
-  line-height: 1.5; 
+  line-height: 1.5;
   animation: fadeInUp 1s ease-out forwards;
   font-weight: bold;
+  text-align: center;
 }
 
 @media screen and (max-width: 800px) {
@@ -195,40 +289,39 @@ i{
     justify-content: center;
     text-align: center;
     margin-top: 64px;
-    background-image: url('pexels-tima-miroshnichenko-6670797.jpg'); 
-    min-height:246px;
-    background-size:cover ;
+    background-image: url("pexels-tima-miroshnichenko-6670797.jpg");
+    min-height: 246px;
+    background-size: cover;
   }
-  .home-section::after{
-    background-image:  url('long-black-curved-arrows2-set-260nw-2482787799.png');
-    top: 40px;
-    width: 120px; 
+  .home-section::after {
+    background-image: url("long-black-curved-arrows2-set-260nw-2482787799.png");
+    top: -25px;
+    width: 120px;
     height: 120px;
     left: 45px;
   }
-  #p-home{
+  #h-home {
     position: relative;
     top: -65px;
     font-size: 20px;
   }
-  #school{
-    margin-top: 55px;
+  #school {
+    margin-top: -5px;
     padding-top: 13px;
     padding-bottom: -10px;
+    padding-left: 3px;
+    padding-right: 3px;
     position: absolute;
-    top: 18px; 
-    left: 165px; 
-    width: 150px; 
-    height: 57px; 
-    z-index: 2; 
+    top: 18px;
+    left: 165px;
+    width: 150px;
+    height: 57px;
+    z-index: 3;
     font-size: 18px;
-    font-weight:bolder;
+    font-weight: bolder;
     text-align: center;
   }
 }
-
-
-
 @keyframes fadeInUp {
   0% {
     transform: translateY(100%) scale(0.5);
@@ -239,3 +332,5 @@ i{
     opacity: 1;
   }
 }
+
+/*# sourceMappingURL=styles.css.map */
