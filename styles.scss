@@ -1,4 +1,6 @@
 @import'buttons.scss';
+@import'contact_form.css';
+
 :root {
     --main-body-light-color: #FFFF; 
     --text-color: white;
@@ -67,7 +69,7 @@
   }
   
   /* For smaller screens (less than 600px) */
-  @media screen and (max-width: 738px) {
+  @media screen and (max-width: 755px) {
   /* Hide all links except the icon initially */
   .topnav #navbar-right a {
     display: none;
