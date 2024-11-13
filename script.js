@@ -24,25 +24,42 @@ window.addEventListener('resize', function() {
     }
 });
 
+
 /*Load different content */
 // Function to load content dynamically
+/*
 function loadContent(url) {
-    // Push a new state to the browser's history stack
-    history.pushState({ path: url }, '', url);
-
-    // Dynamically load content (e.g., using fetch)
+    // Check if the new URL is the same as the current one to avoid duplicate entries
+    if (window.location.pathname !== url) {
+        // Push a new state to the browser's history stack
+        history.pushState({ path: url }, '', url);
+    }
+    // Dynamically load content (using fetch)
     fetch(url)
-        .then(response => response.text())
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
         .then(data => {
-            document.getElementById("content").innerHTML = data;
+            document.getElementById("content").innerHTML = data;  // Update the content section
         })
         .catch(error => console.error('Error loading content:', error));
-}
+}*/
 
-// Handle the browser's back and forward buttons
+
+/*
+// Handle back and forward navigation
 window.onpopstate = function(event) {
-    if (event.state) {
-        loadContent(event.state.path);  // Reload the content when navigating back or forward
+    if (event.state && event.state.path) {
+        // Load the content corresponding to the path in history
+        loadContent(event.state.path);
+    } else {
+        // If no state is found, load the default content (index.php)
+        loadContent('index.php');
     }
 };
+*/
+
 

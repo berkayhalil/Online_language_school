@@ -8,7 +8,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
-        Онлайн Езикова Школа Linguoza 
+        Онлайн Езикова Школа Bekolingo 
     </title>
 </head>
 <body>
@@ -16,7 +16,7 @@
         <img id="logo-id" src="Untitled-6.png" alt="logo">
         <div id="navbar-right">
             <a id="phone-icon" href="tel:+359895881182" onclick="collapseMenu()"><i class="fa-solid fa-phone"></i>  <span>089 588 1182</span></a>
-            <a href="#nachalo" onclick="loadContent('index.html');collapseMenu()"><i class="fas fa-home"></i></a>
+            <a href="index.php" onclick="collapseMenu()"><i class="fas fa-home"></i></a>
             <a href="#za-nas" onclick="collapseMenu()">ЗА НАС</a>
             <a href="#kursove" onclick="collapseMenu()">КУРСОВЕ</a>
             <a href="#ceni" onclick="collapseMenu()">ЦЕНИ</a>
@@ -27,22 +27,22 @@
         </a>
     </div>
 
-    <div id="content">
     <section class="home-section" id="nachalo">
 
-        <a href="#" onclick="loadContent('contact.html'); collapseMenu();" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a> 
-        
+    <a href="contact_form.php" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a>
+
         <div id="school">
             Вашата онлайн езикова школа
         </div>
         <h1 id="h-home">Учи английски език с нас в реално време с учител - бързо и лесно! Онлайн от всяко място, по всяко време.
              Нужно е само устройство – лаптоп, таблет или телефон и добра интернет връзка.</h1>
     
+             
     </section>
-    </div>
-
+    
     <script src="script.js"></script>
-
+    
+</div>
 </body>
 </html>
 

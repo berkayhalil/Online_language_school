@@ -1,8 +1,14 @@
+
+
+<?php include('header.php'); ?>
+
+<?php include("navbar.php");?>
+
 <form id="form">
     <h2 id="contact_us">ЗАЯВИ КОНСУЛТАЦИЯ</h2>
-    <input class="contact_inputes"placeholder="Име"required></input>
-    <input type="tel" class="contact_inputes"placeholder="Телeфон"required></input>
-    <input type="email" class="contact_inputes"placeholder="Email"required></input>
+    <input class="contact_inputes"placeholder="Име"required>
+    <input type="tel" class="contact_inputes"placeholder="Телeфон"required>
+    <input type="email" class="contact_inputes"placeholder="Email"required>
     <textarea class="contact_inputes"placeholder="Съобщение"required></textarea>
     <button id="contact_btn">ИЗПРАЩАНЕ</button>
     <div id="contact_span_div">
@@ -10,3 +16,7 @@
       <span class="fa fa-envelope-o contact_spans"></span> contact@company.com
     </div>
   </form>
+  <?php include('footer.php'); ?>
+
+  
+  

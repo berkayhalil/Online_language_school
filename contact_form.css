@@ -14,7 +14,7 @@
 #contact_us {
     margin: 10px 0;
     padding-bottom: 10px;
-    width: 180px;
+    width: auto;
     color: #78788c;
     border-bottom: 3px solid #78788c;
     font-weight: lighter;
