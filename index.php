@@ -12,24 +12,13 @@
     </title>
 </head>
 <body>
-    <div class="topnav" id="myTopnav">
-        <img id="logo-id" src="Untitled-6.png" alt="logo">
-        <div id="navbar-right">
-            <a id="phone-icon" href="tel:+359895881182" onclick="collapseMenu()"><i class="fa-solid fa-phone"></i>  <span>089 588 1182</span></a>
-            <a href="index.php" onclick="collapseMenu()"><i class="fas fa-home"></i></a>
-            <a href="#za-nas" onclick="collapseMenu()">ЗА НАС</a>
-            <a href="#kursove" onclick="collapseMenu()">КУРСОВЕ</a>
-            <a href="#ceni" onclick="collapseMenu()">ЦЕНИ</a>
-            <a href="#kontakti" onclick="collapseMenu()"><i class="fa fa-fw fa-envelope"></i>КОНТАКТИ</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
+
+<!--Nav bar -->
+<?php include 'navbar.php'; ?>
 
     <section class="home-section" id="nachalo">
 
-    <a href="contact_form.php" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a>
+    <a  onclick="openContactForm()" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a>
 
         <div id="school">
             Вашата онлайн езикова школа
@@ -37,12 +26,19 @@
         <h1 id="h-home">Учи английски език с нас в реално време с учител - бързо и лесно! Онлайн от всяко място, по всяко време.
              Нужно е само устройство – лаптоп, таблет или телефон и добра интернет връзка.</h1>
     
-             
-    </section>
-    
-    <script src="script.js"></script>
-    
+
+<!--contact Form and overlay -->
+             <div id="myOverlay" class="overlay">
+  <span class="closebtn" onclick="closeContactForm()" title="Close Overlay">×</span>
+  <div class="overlay-content">
+  <?php include 'contact-form.php'; ?>
+  </div>
 </div>
+
+<script src="script.js"></script>
+<script src="contact-form.js"></script>
+    </section>
+
 </body>
 </html>
 

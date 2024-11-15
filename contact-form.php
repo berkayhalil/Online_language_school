@@ -1,9 +1,3 @@
-
-
-<?php include('header.php'); ?>
-
-<?php include("navbar.php");?>
-
 <form id="form">
     <h2 id="contact_us">ЗАЯВИ КОНСУЛТАЦИЯ</h2>
     <input class="contact_inputes"placeholder="Име"required>
@@ -16,7 +10,7 @@
       <span class="fa fa-envelope-o contact_spans"></span> contact@company.com
     </div>
   </form>
-  <?php include('footer.php'); ?>
+  
 
   
   

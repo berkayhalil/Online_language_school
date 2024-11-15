@@ -1,0 +1,128 @@
+.home-section {
+    position: relative;
+    display: flex;               /* Use Flexbox */
+    flex-direction: column;      /* Stack items vertically */
+    justify-content: center;      /* Center items vertically */
+    align-items: center;          /* Center items horizontally */
+    text-align: center;           /* Center text within the paragraph */
+    margin-top: -47px;
+    scroll-margin-top: 65px;
+    background-image: url('pexels-tima-miroshnichenko2-6671419.jpg'); /* Background image */
+    background-size: cover;      /* Cover the entire section */
+    background-position: center;  /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 742px;               /* Set a fixed height */
+    color: #ffffff; /* Set default text color to white for visibility */
+  }
+  
+  .home-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(105, 101, 101, 0.5); 
+  z-index: 1; 
+  }
+  
+  .home-section::after {
+  content: '';
+  position: absolute;
+  top: 85px; 
+  left: 40px; 
+  width: 130px; 
+  height: 130px; 
+  background-image: url('long-black-curved-arrows2-set-260nw-2482787799.png'); 
+  background-size: contain; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  z-index: 0; 
+  background-color: transparent;
+  animation: fadeInUp 2s ease-out forwards;
+  }
+  
+  #school{
+  padding-top: 15px;
+  position: absolute;
+  top: 120px; 
+  left: 170px; 
+  width: 180px; 
+  height: 65px; 
+  z-index: 0; 
+  font-size: 21px;
+  font-weight:bolder;
+  background-color:var(--main-text-background-color);
+  border-radius: 50px;
+  text-align: center;
+  animation: fadeInUp 2s ease-out forwards;
+  }
+  
+  #h-home {
+    position: absolute;
+    margin-bottom: -250px;
+  padding: 15px;
+  text-align: center;
+  color: var(--main-body-light-color);
+  background-color:var(--main-text-background-color);
+  border-radius: 15px;
+  max-width: 890px;
+  font-size: 24px;
+  line-height: 1.5; 
+  animation: fadeInUp 1s ease-out forwards;
+  font-weight: bold;
+  text-align: center;
+  }
+  
+  @media screen and (max-width: 800px) {
+  .home-section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 64px;
+    background-image: url('pexels-tima-miroshnichenko-6670797.jpg'); 
+    min-height:246px;
+    background-size:cover ;
+  }
+  .home-section::after{
+    background-image:  url('long-black-curved-arrows2-set-260nw-2482787799.png');
+    top: -25px;
+    width: 120px; 
+    height: 120px;
+    left: 45px;
+  }
+  #h-home{
+    position: relative;
+    top: -65px;
+    font-size: 20px;
+  }
+  #school{
+    margin-top: -5px;
+    padding-top: 13px;
+    padding-bottom: -10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    position: absolute;
+    top: 18px; 
+    left: 165px; 
+    width: 150px; 
+    height: 52px; 
+    z-index: 0; 
+    font-size: 18px;
+    font-weight:bolder;
+    text-align: center;
+  }
+  }
+  
+  
+  /*animation*/
+  @keyframes fadeInUp {
+  0% {
+    transform: translateY(100%) scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0%) scale(1);
+    opacity: 1;
+  }
+  }

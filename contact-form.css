@@ -82,4 +82,30 @@
 .contact_spans {
     margin: 0 5px 0 15px;
 }
+  
 
+/*Overlay eeffect*/
+  .overlay {
+    height: 100%;
+    width: 100%;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 60px;
+    right: 13px;
+    font-size: 60px;
+    cursor: pointer;
+    color: white;
+  }
+  
+  .overlay .closebtn:hover {
+    color: #ccc;
+  }
