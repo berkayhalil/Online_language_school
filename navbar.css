@@ -111,3 +111,14 @@ body{
     width: 130px; 
     height: auto; 
     }
+
+    #phone-icon{
+      font-size: 20px;
+      margin-top: -2px;
+      }
+      
+      @media screen and (max-width: 887px) {
+      #phone-icon span{
+        display:none;
+      }
+      }

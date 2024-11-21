@@ -16,7 +16,7 @@
 <!--Nav bar -->
 <?php include 'navbar.php'; ?>
 
-    <section class="home-section" id="nachalo">
+    <section class="home-section" id="home">
 
     <a  onclick="openContactForm()" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a>
 
@@ -35,7 +35,7 @@
   </div>
 </div>
 
-<script src="script.js"></script>
+<script src="navbar.js"></script>
 <script src="contact-form.js"></script>
     </section>
 

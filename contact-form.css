@@ -1,6 +1,6 @@
 #form {
-    width: 340px;
-    height: 440px;
+    width: 488px;
+    height: 460px;
     background: #e6e6e6;
     border-radius: 8px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -17,11 +17,11 @@
     width: auto;
     color: #78788c;
     border-bottom: 3px solid #78788c;
-    font-weight: lighter;
+    font-weight:bold;
 }
 
 .contact_inputes {
-    margin-top: 20px;
+    margin-top: 22px;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
@@ -31,6 +31,7 @@
     border: 0;
     transition: all .3s;
     border-bottom: 2px solid #bebed2;
+    font-size: 16px;
 }
 
 .contact_inputes:focus {
@@ -82,7 +83,11 @@
 .contact_spans {
     margin: 0 5px 0 15px;
 }
-  
+
+#form-message{
+    font-size: 16px;
+     font-family:arial;
+}
 
 /*Overlay eeffect*/
   .overlay {
