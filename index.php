@@ -11,7 +11,7 @@
         Онлайн Езикова Школа Bekolingo 
     </title>
 </head>
-<body>
+<body id="body-home">
 
 <!--Nav bar -->
 <?php include 'navbar.php'; ?>

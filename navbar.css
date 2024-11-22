@@ -1,4 +1,4 @@
-body{
+#body-home{
     margin: 0;
     font-family:sans-serif;
     }
@@ -51,6 +51,14 @@ body{
     background-color: #abcedb;
     color: black;
     }
+
+    @media (hover: none) {
+      .topnav a:hover {
+          background-color: transparent; /* Disable hover effect */
+          color: var(--text-color);
+      }
+  } 
+    
     
     
     .topnav .icon {

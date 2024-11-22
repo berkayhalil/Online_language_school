@@ -81,7 +81,7 @@
     text-align: center;
     margin-top: 64px;
     background-image: url('pexels-tima-miroshnichenko-6670797.jpg'); 
-    min-height:246px;
+    min-height:846px;
     background-size:cover ;
   }
   .home-section::after{
@@ -113,6 +113,8 @@
     text-align: center;
   }
   }
+
+
   
   
   /*animation*/
