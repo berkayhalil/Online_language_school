@@ -8,6 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
     <link rel="stylesheet" href="styles.css">
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
 </head>
 <body id="body-contacts">
 <main class="main-content-contacts">
@@ -22,11 +25,10 @@
 
     <section class="contact-details">
 
-    <div class="contacts-container">
-        <p>Address:</p>
-        <p>Phone: 089 588 1182</p>
-        <p>Email: bekolingo.info@gmail.com</p>
-    </div>
+   <div class="contacts-container">
+    <p><i class="fas fa-phone"></i> 089 588 1182</p>
+    <p><i class="fas fa-envelope"></i> bekolingo.info@gmail.com</p>
+</div>
 
     <div class="vertical-line"></div> <!-- Vertical line -->
 

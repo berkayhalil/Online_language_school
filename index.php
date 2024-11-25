@@ -10,6 +10,9 @@
     <title>
         Онлайн Езикова Школа Bekolingo 
     </title>
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
 </head>
 <body id="body-home">
 
@@ -36,7 +39,6 @@
 </div>
 
 <script src="navbar.js"></script>
-<script src="contact-form.js"></script>
     </section>
 
 </body>

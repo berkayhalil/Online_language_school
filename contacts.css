@@ -1,7 +1,6 @@
 #body-contacts{
     font-family:sans-serif;
     margin:0;
-    
 }
 
 #div-h1-con{
@@ -46,7 +45,7 @@
 }
 
 .contacts-container p {
-    font-size: 25px;
+    font-size: 23px;
     padding-bottom: 15px;
     text-align: left; /* Align text to the left */
     width: 100%; /* Ensure paragraphs take the full width of the container */
@@ -54,16 +53,33 @@
     margin: 0; /* Remove default margin for better alignment */
 }
 
+.contacts-container{
+    color: var(--main-body-dark-color); /* Change to your brand's color */
+    margin-right: 8px; /* Add spacing between the icon and text */
+    font-size: 18px; /* Adjust icon size */
+    vertical-align: middle;
+    font-weight: bold;
+}
+
 .main-content-contacts #form{
     width: 400px;
+    height: auto;
     margin: 0;
 }
 
-@media (max-width: 850px) {
+.main-content-contacts #contact_btn{
+  margin-top: 0;
+}
+
+@media (max-width: 900px) {
     .contact-details {
         flex-direction: column;  /* Stack elements vertically on smaller screens */
         align-items: center;  /* Center items */
         text-align: center;
+    }
+
+    .main-content-contacts #form{
+        height: auto;
     }
     .contacts-container p{
         text-align: center;
@@ -75,16 +91,20 @@
         width: 100%;
         max-width: none;  /* Remove the max-width on small screens */
         padding-top: 15px;
+    }   
+    .contacts-container p {
+        font-size: 20px;
     }
 }
 
 .vertical-line {
-    width: 2px;  /* Set the width of the line */
+    width: 3px;  /* Set the width of the line */
     background-color: var(--main-body-dark-color);  /* Color of the line, red in this case */
     height:450px;  /* Full height to match the height of the parent container */
     position:static;  /* To position the line relative to the parent container */
     top:27%;  /* Align the top of the line with the top of the parent */
     left: 50%;  /* Center the line horizontally */
+    border-radius: 5px;
 }
 
 

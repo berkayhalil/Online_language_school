@@ -7,7 +7,9 @@
     <input type="email" class="contact_inputes" name="email" placeholder="Имейл"required>
     <textarea id="form-message"class="contact_inputes" name="message"placeholder="Съобщение"></textarea>
 
-    <button type="submit" name="contact_form_btn" id="contact_btn">ИЗПРАЩАНЕ</button>
+      <div class="g-recaptcha" data-sitekey="6Lf82IgqAAAAALJsJgsigTbRciVyxlSsicQrX-7n" data-callback="enableSubmitBtn"></div>
+      <button type="submit" name="contact_form_btn" id="contact_btn" disabled="disabled">ИЗПРАЩАНЕ</button>
+    
 
     <div id="contact_span_div">
       <span class="fa fa-phone contact_spans"></span>089 588 1182

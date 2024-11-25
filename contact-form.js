@@ -5,3 +5,7 @@ function openContactForm() {
   function closeContactForm() {
     document.getElementById("myOverlay").style.display = "none";
   }
+
+  function enableSubmitBtn(){
+    document.getElementById("contact_btn").disabled = false;
+  }
