@@ -22,18 +22,24 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
   <script>
-    var messageText = "<?= $_SESSION['status']?? ''?>"
-    if(messageText != ''){
+    var messageText = "<?= $_SESSION['status'] ?? '' ?>";
+    var messageType = "<?= $_SESSION['status_type'] ?? 'info' ?>"; // Default to 'info' if not set
 
+    if (messageText !== '') {
         Swal.fire({
-        title: "Thank you!",
-        text: messageText,
-        icon: "success"
+            title: messageType === "success" ? "Thank you!" : "Oops!",
+            text: messageText,
+            icon: messageType, // Use the session status type as the icon
+        });
 
-    });
-    <?php unset($_SESSION['status'])?>
-}
+        <?php
+        // Clear session variables after displaying the alert
+        unset($_SESSION['status']);
+        unset($_SESSION['status_type']);
+        ?>
+    }
 </script>
+
   
 
   
