@@ -1,117 +1,118 @@
-#body-contacts{
-    font-family:sans-serif;
-    margin:0;
+#body-contacts {
+  font-family: sans-serif;
+  margin: 0;
 }
 
-#div-h1-con{
-    margin-top: 54px;
-    background-color:aliceblue;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-radius: 0 0 100% 100%;
-   width: 100%;
-   background-color:aliceblue;
+.div-top-h1 {
+  margin-top: 54px;
+  background-color: aliceblue;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-radius: 0 0 100% 100%;
+  width: 100%;
+  background-color: aliceblue;
 }
 
-
-#h1-contacts{
-    text-align: center;
-    color: var(--main-body-dark-color);
-    text-decoration: underline;
-    text-underline-offset: 8px;
-    font-size: 30px;
+.h1-top{
+  text-align: center;
+  color: var(--main-body-dark-color);
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .contact-details {
-    display: flex;
-    flex-direction: row;
-    justify-content:center; /* Distribute items with equal space around them */
-    align-items: start; /* Align items to the top of the section */
-    padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
 }
 
 .contacts-container,
 #form-container {
-    flex: 1; /* Each div takes equal space */
-    max-width: 45%; /* Optional: set a max width for better layout control */
-    align-items: center;
-    display: flex; /* Use Flexbox for alignment */
-    flex-direction: column; /* Arrange elements vertically */
-}
-.contacts-container {
-    display: flex; /* Use Flexbox for alignment */
-    flex-direction: column; /* Arrange elements vertically */
-    align-items: center; /* Center the items horizontally */
+  flex: 1; /* Each div takes equal space */
+  max-width: 45%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts-container p {
-    font-size: 23px;
-    padding-bottom: 15px;
-    text-align: left; /* Align text to the left */
-    width: 100%; /* Ensure paragraphs take the full width of the container */
-    max-width: 400px; /* Optional: set a max width for better layout control */
-    margin: 0; /* Remove default margin for better alignment */
+  font-size: 23px;
+  padding-bottom: 15px;
+  text-align: left;
+  width: 100%;
+  max-width: 400px;
+  margin: 0;
 }
 
-.contacts-container{
-    color: var(--main-body-dark-color); /* Change to your brand's color */
-    margin-right: 8px; /* Add spacing between the icon and text */
-    font-size: 18px; /* Adjust icon size */
-    vertical-align: middle;
-    font-weight: bold;
+.contacts-container {
+  color: var(--main-body-dark-color);
+  font-size: 18px;
+  vertical-align: middle;
+  font-weight: bold;
 }
 
-.main-content-contacts #form{
-    width: 400px;
-    height: auto;
-    margin: 0;
+.main-content-contacts #form {
+  width: 400px;
+  height: auto;
+  margin: 0;
 }
 
-.main-content-contacts #contact_btn{
+.main-content-contacts #contact_btn {
   margin-top: 0;
 }
 
 @media (max-width: 900px) {
-    .contact-details {
-        flex-direction: column;  /* Stack elements vertically on smaller screens */
-        align-items: center;  /* Center items */
-        text-align: center;
-    }
+  .contact-details {
+    flex-direction: column; /* Stack elements vertically on smaller screens */
+    align-items: center;
+    text-align: center;
+  }
 
-    .main-content-contacts #form{
-        height: auto;
-    }
-    .contacts-container p{
-        text-align: center;
-    }
-    
-    
-    .contacts-container,
-    #form-container {
-        width: 100%;
-        max-width: none;  /* Remove the max-width on small screens */
-        padding-top: 15px;
-    }   
-    .contacts-container p {
-        font-size: 20px;
-    }
+  .main-content-contacts #form {
+    height: auto;
+  }
+  .contacts-container p {
+    text-align: center;
+  }
+  .contacts-container,
+  #form-container {
+    width: 100%;
+    max-width: none; /* Remove the max-width on small screens */
+    padding-top: 15px;
+  }
+  .contacts-container p {
+    font-size: 20px;
+  }
 }
 
 .vertical-line {
-    width: 3px;  /* Set the width of the line */
-    background-color: var(--main-body-dark-color);  /* Color of the line, red in this case */
-    height:450px;  /* Full height to match the height of the parent container */
-    position:static;  /* To position the line relative to the parent container */
-    top:27%;  /* Align the top of the line with the top of the parent */
-    left: 50%;  /* Center the line horizontally */
-    border-radius: 5px;
+  width: 3px;
+  background-color: var(--main-body-dark-color);
+  height: 450px;
+  position: static;
+  top: 27%;
+  left: 50%;
+  border-radius: 5px;
 }
-
 
 @media (max-width: 1076px) {
-    .vertical-line {
-        display: none;
-    }
+  .vertical-line {
+    display: none;
+  }
 }
 
+.image-container {
+  text-align: center;
+  max-width: 400px;
+}
 
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

@@ -1,11 +1,11 @@
 function openContactForm() {
-    document.getElementById("myOverlay").style.display = "block";
-  }
-  
-  function closeContactForm() {
-    document.getElementById("myOverlay").style.display = "none";
-  }
+  document.getElementById("myOverlay").style.display = "block";
+}
 
-  function enableSubmitBtn(){
-    document.getElementById("contact_btn").disabled = false;
-  }
+function closeContactForm() {
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+function enableSubmitBtn() {
+  document.getElementById("contact_btn").disabled = false;
+}

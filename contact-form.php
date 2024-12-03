@@ -2,9 +2,9 @@
 
 <form id="form" method="post" action="<?php echo htmlspecialchars('contact-form-email.php');?>">
     <h2 id="contact_us">ЗАЯВИ БЕЗПЛАТНА КОНСУЛТАЦИЯ</h2>
-    <input class="contact_inputes" name ="name" placeholder="Име и Фамилия"required>
-    <input type="tel" class="contact_inputes" name="phone-number" placeholder="Телeфон"required pattern="\+?[0-9 ]*">
-    <input type="email" class="contact_inputes" name="email" placeholder="Имейл"required>
+    <input class="contact_inputes" name ="name" placeholder="Име и Фамилия*"required>
+    <input type="tel" class="contact_inputes" name="phone-number" placeholder="Телeфон*"required pattern="\+?[0-9 ]*">
+    <input type="email" class="contact_inputes" name="email" placeholder="Имейл*"required>
     <textarea id="form-message"class="contact_inputes" name="message"placeholder="Съобщение"></textarea>
 
       <div class="g-recaptcha" data-sitekey="6Lf82IgqAAAAALJsJgsigTbRciVyxlSsicQrX-7n" data-callback="enableSubmitBtn"></div>

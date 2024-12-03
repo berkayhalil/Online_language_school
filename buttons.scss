@@ -1,8 +1,7 @@
-
 /*konsultacia button*/
 $speed: 0.5s;
 
-.btn-flip{
+.btn-flip {
   position: absolute;
   right: 13px;
   top: 193px;
@@ -16,21 +15,20 @@ $speed: 0.5s;
   text-transform: uppercase;
   border-radius: 5px;
   font-weight: bold;
-  
-  &:hover{
-    
-    &:after{
+
+  &:hover {
+    &:after {
       opacity: 1;
       transform: translateY(0) rotateX(0);
     }
-    
-    &:before{
+
+    &:before {
       opacity: 0;
       transform: translateY(50%) rotateX(90deg);
     }
   }
-  
-  &:after{
+
+  &:after {
     top: 0;
     left: 0;
     opacity: 0;
@@ -44,8 +42,8 @@ $speed: 0.5s;
     transform: translateY(-50%) rotateX(90deg);
     border-radius: 5px;
   }
-  
-  &:before{
+
+  &:before {
     top: 0;
     left: 0;
     opacity: 1;
@@ -63,7 +61,7 @@ $speed: 0.5s;
 }
 
 @media screen and (max-width: 800px) {
-  .btn-flip{
+  .btn-flip {
     position: absolute;
     right: 10px;
     top: 120px;
@@ -76,21 +74,20 @@ $speed: 0.5s;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 14px;
-    
-    &:hover{
-      
-      &:after{
+
+    &:hover {
+      &:after {
         opacity: 1;
         transform: translateY(0) rotateX(0);
       }
-      
-      &:before{
+
+      &:before {
         opacity: 0;
         transform: translateY(50%) rotateX(90deg);
       }
     }
-    
-    &:after{
+
+    &:after {
       top: 0;
       left: 0;
       opacity: 0;
@@ -103,8 +100,8 @@ $speed: 0.5s;
       content: attr(data-back);
       transform: translateY(-50%) rotateX(90deg);
     }
-    
-    &:before{
+
+    &:before {
       top: 0;
       left: 0;
       opacity: 1;

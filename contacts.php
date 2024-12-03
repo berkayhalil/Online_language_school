@@ -15,35 +15,41 @@
 <body id="body-contacts">
 <main class="main-content-contacts">
 
+<script src="navbar.js"></script>
+<?php include 'navbar.php'?>
+
     <header>
-        <div id="div-h1-con">
-            <h1 id="h1-contacts">КОНТАКТИ</h1>
+        <div class="div-top-h1 ">
+            <h1 class="h1-top">КОНТАКТИ</h1>
         </div>
     </header>
-
-    <div class="contact-sections">
 
     <section class="contact-details">
 
    <div class="contacts-container">
-    <p><i class="fas fa-phone"></i> 089 588 1182</p>
-    <p><i class="fas fa-envelope"></i> bekolingo.info@gmail.com</p>
-</div>
+
+        <div class="contact-info">
+            <p><i class="fas fa-phone"></i> 089 588 1182</p>
+            <p><i class="fas fa-envelope"></i> bekolingo.info@gmail.com</p>
+            <p><i class='fas fa-clock'></i> понеделник - петък | 9:00-18:00</p>
+            <p><i class='fas fa-clock'></i> събота - неделя | 10:00-14:00</p>
+        </div>
+
+        <div class="image-container">
+            <img src="pexels-olly-789822.jpg" alt="img"/>
+        </div>
+        
+    </div>
 
     <div class="vertical-line"></div> <!-- Vertical line -->
-
+    
     <div id="form-container">
         <?php include 'contact-form.php'; ?>
     </div>
-
-         <script src="contacts.js"></script>
+        <script src="contacts.js"></script>
 
     </section>
     </div>
-
-<script src="navbar.js"></script>
-<?php include 'navbar.php'?>
-
 </main>
 
 </body>

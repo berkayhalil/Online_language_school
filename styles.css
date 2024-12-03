@@ -3,6 +3,7 @@
 @import 'navbar.css';
 @import 'home-section.css';
 @import 'contacts.css';
+@import 'for-us.css';
 .btn-flip {
   position: absolute;
   right: 13px;
