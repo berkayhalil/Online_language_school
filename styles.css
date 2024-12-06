@@ -4,6 +4,7 @@
 @import 'home-section.css';
 @import 'contacts.css';
 @import 'for-us.css';
+@import 'why-us-section.css';
 .btn-flip {
   position: absolute;
   right: 13px;
@@ -36,7 +37,7 @@
   display: block;
   transition: 0.5s;
   position: absolute;
-  background: var(--main-text-background-color);
+  background: #fda403;
   content: attr(data-back);
   transform: translateY(-50%) rotateX(90deg);
   border-radius: 5px;
@@ -51,7 +52,7 @@
   line-height: 40px;
   transition: 0.5s;
   position: relative;
-  background: var(--main-body-dark-color);
+  background: #fda403;
   content: attr(data-front);
   transform: translateY(0) rotateX(0);
   border-radius: 5px;
@@ -89,7 +90,7 @@
     display: block;
     transition: 0.5s;
     position: absolute;
-    background: var(--main-text-background-color);
+    background: #fda403;
     content: attr(data-back);
     transform: translateY(-50%) rotateX(90deg);
   }
@@ -103,7 +104,7 @@
     line-height: 40px;
     transition: 0.5s;
     position: relative;
-    background: var(--main-body-dark-color);
+    background: #fda403;
     content: attr(data-front);
     transform: translateY(0) rotateX(0);
   }
@@ -113,6 +114,7 @@
   --text-color: white;
   --main-body-dark-color: #083E85; /*#083E85*/
   --main-text-background-color: rgba(8, 62, 133, 0.8);
+  --p-text-color: #808080;
 }
 
 /*# sourceMappingURL=styles.css.map */

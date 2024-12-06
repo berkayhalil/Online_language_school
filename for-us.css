@@ -39,7 +39,7 @@
 #div-picture-about-us img{
     border-radius: 15px;
     min-height: 300px;
-    height: 300px;
+    height: 340px;
     margin-top: 7%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 80%;
@@ -49,7 +49,7 @@
     display: flex;
     justify-content: flex-start; /* Align items to the left */
     align-items: flex-start; /* Align items to the top */
-    width: 100%; /* Ensure full width */
+    width: 80%; /* Ensure full width */
 }
 
 #p-about-us-description {
@@ -57,8 +57,11 @@
     text-align-last: left; 
     line-height: 23px;
     font-size: 19px;
-    color: #808080;
+    color: var(--p-text-color);
     margin-top: 2px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media (max-width: 900px) {
@@ -73,6 +76,7 @@
     #p-about-us-description{
         text-align: center;
     text-align-last: center;
+    width: 100%;
     }
     #div-picture-about-us img{
         width: 100%;

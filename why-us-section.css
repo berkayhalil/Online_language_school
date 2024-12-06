@@ -1,0 +1,49 @@
+#why-us-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+#why-us-div {
+  display: flex;
+  height: 50px;
+}
+
+#why-us-h1 {
+  color: var(--main-body-dark-color);
+}
+
+#filologists-info-div {
+  display: flex;
+  justify-content: center;
+  width: 70%;
+  text-align: center;
+}
+
+#filologists-info-p {
+  color: var(--p-text-color);
+}
+
+@media screen and (max-width: 800px) {
+  #filologists-info-div {
+    width: 100%;
+  }
+  #why-us-h1 {
+    text-align: center;
+  }
+  #why-us-section hr {
+    display: none;
+  }
+  #why-us-div{
+    height: 75px;
+  }
+}
+
+#why-us-section hr {
+  border-color: #808080;
+  width: 500px;
+  border-width: 1px;
+  border-style: solid;
+}
