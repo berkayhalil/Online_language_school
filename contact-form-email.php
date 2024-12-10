@@ -16,6 +16,7 @@ if (isset($_POST['contact_form_btn'])) {
     $phoneNumber = htmlspecialchars(strip_tags(trim($_POST['phone-number'])));
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars(strip_tags(trim($_POST['message'])));
+    $course = htmlspecialchars(strip_tags(trim($_POST['course'])));
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $_SESSION['status'] = "Невалиден email адрес."; // Error message
@@ -27,7 +28,7 @@ if (isset($_POST['contact_form_btn'])) {
         $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret=' . $secretKey . '&response=' . $_POST['g-recaptcha-response']);
         $response = json_decode($verifyResponse);
 
-        
+
         if ($response->success) {
 
             $mail = new PHPMailer(true);
@@ -46,21 +47,29 @@ if (isset($_POST['contact_form_btn'])) {
                 $mail->addAddress('berkayhalil553@gmail.com');
 
                 // Content
+                if (!empty($course)) {
+                    $courseInfo = "<h4>Course: $course</h4>";
+                } else {
+                    $courseInfo = "";
+                }
+
                 $mail->isHTML(true);
                 $mail->Subject = 'New enquiry - Bekolingo contact form';
                 $mail->Body = "<h3>Hello, you got a new enquiry!</h3>
                             <h4>Name: $name</h4>
                             <h4>Phone: $phoneNumber</h4>
                             <h4>Email: $email</h4>
-                            <h4>Message: $message</h4>";
-
-                            if ($mail->send()) {
-                                $_SESSION['status'] = "Благодарим че се свързахте с нас! - Bekolingo team";
-                                $_SESSION['status_type'] = "success";
-                            } else {
-                                $_SESSION['status'] = "Неуспешно изпращане на данните.";
-                                $_SESSION['status_type'] = "error";
-                            }
+                            $courseInfo
+                            $form_header
+                            <h4>Message: $message</h4>";//check for $couse if it doesn't exist then don't send it;!!!
+                // check also the form name!!!
+                if ($mail->send()) {
+                    $_SESSION['status'] = "Благодарим че се свързахте с нас! - Bekolingo team";
+                    $_SESSION['status_type'] = "success";
+                } else {
+                    $_SESSION['status'] = "Неуспешно изпращане на данните.";
+                    $_SESSION['status_type'] = "error";
+                }
             } catch (Exception $e) {
                 $_SESSION['status'] = "Възникна проблем при изпращане.";
                 error_log("Exception Error: {$mail->ErrorInfo}");
@@ -81,4 +90,3 @@ if (isset($_POST['contact_form_btn'])) {
     exit(0);
 }
 ?>
-

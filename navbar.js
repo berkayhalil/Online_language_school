@@ -1,9 +1,12 @@
 function myFunction() {
   var x = document.getElementById("myTopnav");
+  var body = document.body;
   if (x.className === "topnav") {
     x.className += " responsive";
+    body.classList.add("no-scroll");
   } else {
     x.className = "topnav";
+    body.classList.remove("no-scroll");
   }
 }
 

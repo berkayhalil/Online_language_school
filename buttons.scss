@@ -1,6 +1,12 @@
 /*konsultacia button*/
 $speed: 0.5s;
 
+
+.btn-flip.course{
+  right: 13px;
+  top: 143px;
+}
+
 .btn-flip {
   position: absolute;
   right: 13px;
@@ -115,5 +121,10 @@ $speed: 0.5s;
       content: attr(data-front);
       transform: translateY(0) rotateX(0);
     }
+  }
+
+  .btn-flip.course{
+    right: 13px;
+    top: 75px;
   }
 }

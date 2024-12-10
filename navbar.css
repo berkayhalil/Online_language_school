@@ -20,9 +20,22 @@
   min-height: 65px; /* Collapsed state */
 }
 
+.no-scroll {
+  overflow: hidden;
+  height: 100%; /* Prevent scrolling */
+}
+
 .topnav.responsive {
   max-height: 500px;
   min-height: 325px;
+}
+
+@media screen and (max-height: 500px) {
+  /* Make the menu scrollable only on smaller screens */
+  .topnav.responsive {
+    max-height: 350px; /* Adjust this value to control the height */
+    overflow-y: auto;  /* Enable vertical scrolling */
+  }
 }
 
 .topnav.responsive #phone-icon span {
@@ -41,6 +54,15 @@
   border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media screen and (orientation: landscape) and (max-width: 755px) {
+  .topnav a{
+    font-size: 14px;
+  }
+  .topnav a i{
+    font-size: 20px;
+  }
 }
 
 #navbar-right {

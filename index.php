@@ -23,6 +23,8 @@
 
     <section class="home-section" id="home">
 
+        <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course" data-back="Заяви"
+            data-front="Курс"></a>
         <a onclick="openContactForm()" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a>
 
         <div id="school">
