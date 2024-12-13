@@ -59,7 +59,7 @@
 
 .main-content-contacts #form {
   width: 400px;
-  height: auto;
+  height: 483px;
   margin: 0;
 }
 
@@ -69,6 +69,10 @@
 
 .main-content-contacts #contact_btn {
   margin-top: 0;
+}
+
+#body-contacts .closebtn {
+  display: none;
 }
 
 @media (max-width: 900px) {

@@ -94,7 +94,7 @@ function addSelectToContactForm() {
 
     // Change the header text to "ЗАЯВИ КУРС" when the second button is clicked
     header.innerHTML = "ЗАЯВИ КУРС";
-    form.style.height = "570px";
+    form.style.height = "580px";
     // Set the flag to true, indicating the form is opened with the second button
     formOpenedWithCourseButton = true;
 }

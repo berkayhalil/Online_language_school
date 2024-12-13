@@ -1,5 +1,5 @@
 <div class="topnav" id="myTopnav">
-    <img id="logo-id" src="Untitled-6.png" alt="logo">
+    <img id="logo-id" src="/images/Bekolingologo.png" alt="logo">
     <div id="navbar-right">
         <a id="phone-icon" href="tel:+359895881182" onclick="collapseMenu()"><i class="fa-solid fa-phone"></i> <span>089
                 588 1182</span></a>

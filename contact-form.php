@@ -1,6 +1,7 @@
 <?php session_start() ?>
 
 <form id="form" method="post" action="<?php echo htmlspecialchars('contact-form-email.php'); ?>">
+  <span class="closebtn" onclick="closeContactForm()" title="Close">×</span>
   <h2 id="contact_us">ЗАЯВИ БЕЗПЛАТНА КОНСУЛТАЦИЯ</h2>
   <input class="contact_inputes" name="name" placeholder="Име и Фамилия*" required>
   <input type="tel" class="contact_inputes" name="phone-number" placeholder="Телeфон*" required pattern="\+?[0-9 ]*">
@@ -17,7 +18,7 @@
   </div>
 </form>
 
-<script src="contact-form.js"></script>
+<script src="../js.folder/contact-form.js"></script>
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 

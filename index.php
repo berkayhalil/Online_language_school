@@ -2,18 +2,19 @@
 <html lang="bg">
 
 <head>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css.folder/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="format-detection" content="telephone=no">
     <title>
         Онлайн Езикова Школа Bekolingo
     </title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
+    <script src="/js.folder/home-section.js" defer></script>
 </head>
 
 <body id="body-home">
@@ -37,13 +38,13 @@
 
         <!--contact Form and overlay -->
         <div id="myOverlay" class="overlay">
-            <span class="closebtn" onclick="closeContactForm()" title="Close Overlay">×</span>
+
             <div class="overlay-content">
                 <?php include 'contact-form.php'; ?>
             </div>
         </div>
 
-        <script src="navbar.js"></script>
+        <script src="/js.folder/navbar.js"></script>
     </section>
 
     <section id="why-us-section">
@@ -64,7 +65,24 @@
             </p>
         </div>
 
+        <div id="div-container-for-boxes">
 
+            <div class="box">
+                <img class="box-img" src="/images/12742.png" alt="img">
+                <p>ЕКИП ОТ ПОЗИТИВНИ И ОПИТНИ ПРEПОДАВАТЕЛИ</p>
+            </div>
+
+            <div class="box">
+                <img class="box-img" src="/images/12741.png" alt="img">
+                <p>ПРОГРАМА, СЪОБРАЗЕНА С ВАШИТЕ НУЖДИ</p>
+            </div>
+
+            <div class="box">
+                <img class="box-img" id="quality-img" src="/images/074e51ef65927a0eaf7c68d8e36013b6.png" alt="img">
+                <p>ДОСТЪПНО И ЕФЕКТИВНО ОБУЧЕНИЕ</p>
+            </div>
+
+        </div>
 
     </section>
 

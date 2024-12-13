@@ -7,7 +7,7 @@
   text-align: center; /* Center text within the paragraph */
   margin-top: -47px;
   scroll-margin-top: 65px;
-  background-image: url("pexels-tima-miroshnichenko2-6671419.jpg"); /* Background image */
+  background-image: url("/images/pexels-tima-miroshnichenko2-6671419.jpg"); /* Background image */
   background-size: cover; /* Cover the entire section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -36,7 +36,7 @@
   left: 40px;
   width: 130px;
   height: 130px;
-  background-image: url("long-black-curved-arrows2-set-260nw-2482787799.png");
+  background-image: url("/images/long-black-curved-arrows2-set-260nw-2482787799.png");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -77,18 +77,80 @@
   text-align: center;
 }
 
+#div-container-for-boxes {
+  display: flex;
+  flex-direction: row; /* Stacks the boxes vertically */
+  gap: 50px; /* Adds space between the box elements */
+  margin-top: 20px;
+}
+
+.box{
+  background-color: #edf0f4;
+  height: 290px;
+  width: 220px;
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box p{
+  text-align: center;
+  font-weight: bold;
+  color: var(--main-body-dark-color);
+}
+
+.box-img{
+  width: 200px;
+  height: 200px;
+  margin-bottom: 23px;
+  transition: transform .1s;
+}
+
+.box-img:hover{
+  transform: scale(1.1);
+}
+
+.box {
+  opacity: 0; /* Initially hidden */
+  transform: translateY(20px); /* Move down slightly */
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.box.visible {
+  opacity: 1; /* Fully visible */
+  transform: translateY(0); /* Reset position */
+}
+
+
+@media (hover: none) {
+  .box-img:hover {
+    transform: none; /* Disable the hover scaling */
+  }
+}
+ 
+#quality-img{
+  margin-bottom: 30px;
+  height: 160px;
+  width: 160px;
+}
+
+
 @media screen and (max-width: 800px) {
   .home-section {
     display: flex;
     justify-content: center;
     text-align: center;
     margin-top: 64px;
-    background-image: url("pexels-tima-miroshnichenko-6670797.jpg");
+    background-image: url("/images/pexels-tima-miroshnichenko-6670797.jpg");
     min-height: 846px;
     background-size: cover;
   }
   .home-section::after {
-    background-image: url("long-black-curved-arrows2-set-260nw-2482787799.png");
+    background-image: url("/images/long-black-curved-arrows2-set-260nw-2482787799.png");
     top: -25px;
     width: 120px;
     height: 120px;
@@ -114,6 +176,15 @@
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
+  }
+  #div-container-for-boxes{
+    flex-direction: column;
+  }
+  .box-img{
+    width: 220px;
+    height: 220px;
+    margin-bottom: 17px;
+    transition: transform .1s;
   }
 }
 
