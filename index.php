@@ -9,8 +9,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no">
+    <meta name="description"
+        content="Научете английски език онлайн с Bekolingo – курсове с реален учител в реално време. Лесно, достъпно, от всяко място.">
     <title>
-        Онлайн Езикова Школа Bekolingo
+        Онлайн Езикова Школа Bekolingo | Учи Английски Онлайн с Учител
     </title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
@@ -28,9 +30,9 @@
             data-front="Курс"></a>
         <a onclick="openContactForm()" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a>
 
-        <div id="school">
+        <h2 id="school">
             Вашата онлайн езикова школа
-        </div>
+        </h2>
         <h1 id="h-home">Учи английски език с нас в реално време с учител - бързо и лесно! Онлайн от всяко място, по
             всяко време.
             Нужно е само устройство – лаптоп, таблет или телефон и добра интернет връзка.</h1>
@@ -50,7 +52,7 @@
     <section id="why-us-section">
 
         <div id="why-us-div">
-            <h1 id="why-us-h1">Защо да изберете нашите курсове?</h1>
+            <h2 id="why-us-h1">Защо да изберете нашите курсове?</h2>
         </div>
         <hr>
 
@@ -85,6 +87,8 @@
         </div>
 
     </section>
+
+    <?php include 'footer.php' ?>
 
 </body>
 

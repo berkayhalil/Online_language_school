@@ -1,0 +1,64 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+   /* background-image: linear-gradient(to right, #083E85, #075c94,  #083E85);*/
+   background-color: var(--main-body-dark-color);
+
+}
+
+#footer-main-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 300px;
+}
+
+
+#footer-div-contacts{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.footer-h4{
+    color: var(--text-color);
+    margin-bottom: -5px;
+}
+
+#footer-div-courses{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#bottom-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 0;
+}
+
+#bottom-p{
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-text{
+    color: var(--text-color);
+}
+
+#footer-main-div a{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 800px) {
+    #footer-main-div{
+        flex-direction: column;
+        gap: 10px
+    }
+}

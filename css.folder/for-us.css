@@ -1,86 +1,82 @@
-#body-for-us{
-    margin: 0;
-    font-family: sans-serif;
+#body-for-us {
+  margin: 0;
+  font-family: sans-serif;
 }
 
-
-
-
-#h1-about-us{
-    color: var(--main-body-dark-color);
+#h1-about-us {
+  color: var(--main-body-dark-color);
 }
 
-#section-about-us{
-    display:flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    padding:20px;
+#section-about-us {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: start;
+  padding: 20px;
 }
 
 .main-div-about-us {
-    flex:1;
-    display: flex; /* This makes the parent container a flex container */
-    flex-direction: column; /* Aligns children (divs) in a row */
-    justify-content: start;
-    align-items: center;
-    max-width:100%;
+  flex: 1;
+  display: flex; /* This makes the parent container a flex container */
+  flex-direction: column; /* Aligns children (divs) in a row */
+  justify-content: start;
+  align-items: center;
+  max-width: 100%;
 }
 
 #div-picture-about-us {
-    flex: 1;
-    max-width: 100%;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    border-radius: 8px;
+  flex: 1;
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
 }
 
-#div-picture-about-us img{
-    border-radius: 15px;
-    min-height: 300px;
-    height: 340px;
-    margin-top: 7%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 80%;
-    }
+#div-picture-about-us img {
+  border-radius: 15px;
+  min-height: 300px;
+  height: 340px;
+  margin-top: 7%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 80%;
+}
 
 .div-about-us {
-    display: flex;
-    justify-content: flex-start; /* Align items to the left */
-    align-items: flex-start; /* Align items to the top */
-    width: 80%; /* Ensure full width */
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  align-items: flex-start; /* Align items to the top */
+  width: 80%; /* Ensure full width */
 }
 
 #p-about-us-description {
-    text-align: justify;
-    text-align-last: left; 
-    line-height: 23px;
-    font-size: 19px;
-    color: var(--p-text-color);
-    margin-top: 2px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: justify;
+  text-align-last: left;
+  line-height: 23px;
+  font-size: 19px;
+  color: var(--p-text-color);
+  margin-top: 2px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (max-width: 900px) {
-    #section-about-us{
-        flex-direction:column;
-        align-items: center;
-        text-align: center;
-    }
-    .div-about-us {
-        justify-content: center;
-    }
-    #p-about-us-description{
-        text-align: center;
+  #section-about-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .div-about-us {
+    justify-content: center;
+  }
+  #p-about-us-description {
+    text-align: center;
     text-align-last: center;
     width: 100%;
-    }
-    #div-picture-about-us img{
-        width: 100%;
-        margin-top: 0;
-    }
+  }
+  #div-picture-about-us img {
+    width: 100%;
+    margin-top: 0;
+  }
 }
-

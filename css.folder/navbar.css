@@ -3,6 +3,12 @@
   font-family: sans-serif;
 }
 
+html {
+  -webkit-text-size-adjust: 100%; /* Prevents scaling in Safari and Chrome */
+  -ms-text-size-adjust: 100%;     /* Prevents scaling in IE/Edge */
+  text-size-adjust: 100%;         /* Standard property */
+}
+
 /*---nav-bar-setyles----*/
 .topnav {
   position: fixed;
@@ -54,15 +60,6 @@
   border-radius: 5px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-@media screen and (orientation: landscape) and (max-width: 755px) {
-  .topnav a{
-    font-size: 14px;
-  }
-  .topnav a i{
-    font-size: 20px;
-  }
 }
 
 #navbar-right {
