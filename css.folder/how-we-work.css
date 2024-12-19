@@ -1,0 +1,32 @@
+#how-we-work-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+#main-div-how-we-work{
+    justify-content: start;
+    width: 70%;
+}
+
+#how-we-work-div{
+    height: 55px;
+}
+
+.h4-how-we-work-general{
+color: var(--main-body-dark-color);
+margin-bottom: -5px;
+}
+
+.p-how-we-work{
+    color: var(--p-text-color);
+}
+
+@media screen and (max-width: 800px) {
+   #main-div-how-we-work{
+    width: 100%;
+    }
+  }

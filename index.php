@@ -4,7 +4,6 @@
 <head>
     <link rel="stylesheet" href="/css.folder/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,10 +50,10 @@
 
     <section id="why-us-section">
 
-        <div id="why-us-div">
-            <h2 id="why-us-h1">Защо да изберете нашите курсове?</h2>
+        <div id="why-us-div" class="h2-div-general">
+            <h2 id="why-us-h2" class="h2-general">Защо да изберете нашите курсове?</h2>
         </div>
-        <hr>
+        <hr class="home-page-hr">
 
         <div id="filologists-info-div">
             <p id="filologists-info-p">Нашият екип от опитни филолози е на разположение да ви предложи обучение,
@@ -70,7 +69,7 @@
         <div id="div-container-for-boxes">
 
             <div class="box">
-                <img class="box-img" src="/images/12742.png" alt="img">
+                <img class="box-img" src="/images/12742.png" alt="екип от позитивни и опитни преподаватели">
                 <p>ЕКИП ОТ ПОЗИТИВНИ И ОПИТНИ ПРEПОДАВАТЕЛИ</p>
             </div>
 
@@ -84,6 +83,26 @@
                 <p>ДОСТЪПНО И ЕФЕКТИВНО ОБУЧЕНИЕ</p>
             </div>
 
+        </div>
+
+    </section>
+
+    <section id="how-we-work-section">
+
+        <div id="how-we-work-div" class="h2-div-general">
+            <h2 class="h2-general">Как работим?</h2>
+        </div>
+
+        <hr class="home-page-hr">
+
+        <div id="main-div-how-we-work">
+            <div class="h4-div-description">
+                <h4 class="h4-how-we-work-general">1. Определяне на ниво</h4>
+                <p class="p-how-we-work"> Преди да започнем с обучението, ще проведем безплатен тест за определяне на
+                    нивото ви по английски език. Това ще ни помогне да изберем най-подходящата програма за вас,
+                    съобразена с текущите ви знания и цели. Тестът е лесен, бърз и ще получите резултатите веднага след
+                    като го завършите.</p>
+            </div>
         </div>
 
     </section>

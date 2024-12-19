@@ -1,3 +1,8 @@
+
+#body-home {
+  margin: 0;
+  font-family: sans-serif;
+}
 .home-section {
   position: relative;
   display: flex; /* Use Flexbox */
@@ -145,7 +150,7 @@
     justify-content: center;
     text-align: center;
     margin-top: 64px;
-    background-image: url("/images/pexels-tima-miroshnichenko-6670797.jpg");
+    background-image: url("/images/pexels-tima-miroshnichenko-66707978 (1).jpg");
     min-height: 846px;
     background-size: cover;
   }

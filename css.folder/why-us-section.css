@@ -6,12 +6,13 @@
   padding: 20px;
 }
 
-#why-us-div {
+.h2-div-general {
   display: flex;
   height: 50px;
+  justify-content: center; /* Center horizontally */
 }
 
-#why-us-h1 {
+.h2-general {
   color: var(--main-body-dark-color);
 }
 
@@ -31,18 +32,18 @@
   #filologists-info-div {
     width: 100%;
   }
-  #why-us-h1 {
+  .h2-general {
     text-align: center;
   }
-  #why-us-section hr {
+  .home-page-hr {
     display: none;
   }
-  #why-us-div{
+  .h2-div-general{
     height: 75px;
   }
 }
 
-#why-us-section hr {
+.home-page-hr {
   border-color: #808080;
   width: 500px;
   border-width: 1px;
