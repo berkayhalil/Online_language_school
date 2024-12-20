@@ -87,6 +87,9 @@
   flex-direction: row; /* Stacks the boxes vertically */
   gap: 50px; /* Adds space between the box elements */
   margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
 }
 
 .box{
@@ -182,9 +185,6 @@
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
-  }
-  #div-container-for-boxes{
-    flex-direction: column;
   }
   .box-img{
     width: 220px;

@@ -1,0 +1,133 @@
+#testimonials-section{
+  padding: 20px;
+}
+
+.container{
+  height: auto;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.board{
+  max-width: 987px;
+  width: 70%;
+  background-color: var(--color-dark);
+  text-align: center;
+  border-radius: 8px;
+  padding:  35px 0px;
+  height: auto;
+  overflow: hidden;
+}
+
+.text-light{
+  color:var(--color-light)
+}
+
+.swiper .swiper-slide .flex{
+  margin: 3em o;
+  padding-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.swiper .swiper-slide .comments{
+  background-color: var(--color-light);
+  padding: 1.5em 2em;
+  width: 50%;
+  border-radius: 5px;
+  font-size: .9em;
+  position: relative;
+}
+
+.swiper .swiper-slide .comments::after{
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  left: 45%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid var(--color-light);
+  z-index: -99;
+}
+
+.swiper .profile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1em;
+}
+
+.swiper .profile img{
+  width: 30%;
+  border-radius: 50%;
+  border: 5px solid var(--color-primary);
+  margin: 10px 0;
+}
+
+.swiper .profile > a{
+  text-decoration: none;
+  color: var(--color-light);
+}
+
+.swiper .profile > span{
+  color:var(--color-text);
+  font-size: .8em;
+}
+
+.swiper .swiper-button-prev, .swiper-button-next{
+  color: var(--color-text);
+  display: block;
+}
+
+
+/* Default styles for larger screens */
+.swiper {
+  width: 100%;
+  max-width: 600px;
+}
+
+.rating i {
+  color: #FFD700; /* Gold color for the stars */
+  margin-right: 5px; /* Space between stars */
+  font-size: 15px;
+  padding-bottom: 10px;
+}
+
+/* Adjust for screens smaller than 768px */
+@media (max-width: 800px) {
+  .swiper { /* Ensure swiper takes up full screen width */
+    width: 70%; /* Remove max-width limit on small screens */
+  }
+
+  .swiper .swiper-slide .flex {
+    margin: 2em 0; /* Adjust margins for smaller screens */
+    padding-bottom: 20px; /* Reduce padding for smaller screens */
+  }
+  .swiper .swiper-button-prev, .swiper-button-next{
+    display: none;
+  }
+
+}
+
+/* Further adjustments for screens smaller than 480px */
+@media (max-width: 500px) {
+  .swiper {
+    width: 100%;
+  }
+
+  .swiper .swiper-slide .flex {
+    margin: 1.5em 0; /* Even smaller margin */
+    padding-bottom: 10px; /* Reduce padding further */
+  }
+
+  .board{
+    width: 100%;
+  }
+}
