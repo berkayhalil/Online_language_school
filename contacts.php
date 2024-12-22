@@ -16,16 +16,15 @@
 </head>
 
 <body id="body-contacts">
-    <main class="main-content-contacts">
 
-        <script src="/js.folder/navbar.js"></script>
+    <header>
         <?php include 'navbar.php' ?>
+        <div class="div-top-h1 ">
+            <h1 class="h1-top">КОНТАКТИ</h1>
+        </div>
+    </header>
 
-        <header>
-            <div class="div-top-h1 ">
-                <h1 class="h1-top">КОНТАКТИ</h1>
-            </div>
-        </header>
+    <main class="main-content-contacts">
 
         <section class="contact-details">
 
@@ -56,6 +55,7 @@
     </main>
 
     <?php include 'footer.php'; ?>
+    <script src="/js.folder/navbar.js"></script>
 </body>
 
 </html>

@@ -12,17 +12,15 @@
 </head>
 
 <body id="body-for-us">
-    <script src="/js.folder/navbar.js"></script>
-    <?php include 'navbar.php' ?>
+
+    <header id="header-for-us">
+        <?php include 'navbar.php' ?>
+        <div class="div-top-h1">
+            <h1 class="h1-top">За нас</h1>
+        </div>
+    </header>
 
     <main>
-
-        <header>
-            <div class="div-top-h1">
-                <h1 class="h1-top">За нас</h1>
-            </div>
-        </header>
-
         <section id="section-about-us">
 
             <div class="main-div-about-us">
@@ -57,6 +55,7 @@
         </section>
     </main>
     <?php include 'footer.php' ?>
+    <script src="/js.folder/navbar.js"></script>
 </body>
 
 </html>
