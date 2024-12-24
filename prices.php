@@ -22,141 +22,143 @@
     <main>
 
         <div class="bg-shape">
+            <div class="bg-shape2">
+                <div class="bg-shape3">
 
-            <section id="group-prices-section" class="price-general-section">
+                    <section id="group-prices-section" class="price-general-section">
 
-                <div class="price-h2-div">
-                    <h2 class="price-h2">Цени за групово онлайн обучение:</h2>
-                </div>
+                        <div class="price-h2-div">
+                            <h2 class="price-h2">Цени за групово онлайн обучение:</h2>
+                        </div>
 
-                <div class="main-div-table-prices">
-                    <table id="price-table-group" class="price-table-general">
-                        <thead>
-                            <tr>
-                                <th>Курс</th>
-                                <th>Продължителност</th>
-                                <th>Часове</th>
-                                <th>Цена</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A1/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">330 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A1/2</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">330 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A2/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">370 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A2/2</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">370 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">B1/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">430 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">B1/2</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">430 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">B2/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">450 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">B2/2</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">450 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">C1/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">470 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">C1/2</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">470 лв</td>
-                            </tr>
+                        <div class="main-div-table-prices">
+                            <table id="price-table-group" class="price-table-general">
+                                <thead>
+                                    <tr>
+                                        <th>Курс</th>
+                                        <th>Продължителност</th>
+                                        <th>Часове</th>
+                                        <th>Цена</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">330 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A1/2</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">330 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A2/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">370 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A2/2</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">370 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">B1/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">430 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">B1/2</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">430 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">B2/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">450 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">B2/2</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">450 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">C1/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">470 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">C1/2</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">470 лв</td>
+                                    </tr>
 
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
 
-            <section id="section-individual-training" class="price-general-section">
+                    <section id="section-individual-training" class="price-general-section">
 
-                <div class="price-h2-div">
-                    <h2 class="price-h2">Цени за индивидуално онлайн обучение:</h2>
-                </div>
+                        <div class="price-h2-div">
+                            <h2 class="price-h2">Цени за индивидуално онлайн обучение:</h2>
+                        </div>
 
-                <div class="main-div-table-prices">
-                    <table id="price-table-individual" class="price-table-general">
-                        <thead>
-                            <tr>
-                                <th>Курс</th>
-                                <th>Продължителност</th>
-                                <th>Часове</th>
-                                <th>Цена</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A1/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">330 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A1/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">330 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A1/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">330 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A1/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">330 лв</td>
-                            </tr>
-                            <tr>
-                                <td data-label="Курс"><span id="course-span">A1/1</span></td>
-                                <td data-label="Продължителност">2 Месеца</td>
-                                <td data-label="Часове">60 уч.часа</td>
-                                <td data-label="Цена">330 лв</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
+                        <div class="main-div-table-prices">
+                            <table id="price-table-individual" class="price-table-general">
+                                <thead>
+                                    <tr>
+                                        <th>Курс</th>
+                                        <th>Продължителност</th>
+                                        <th>Часове</th>
+                                        <th>Цена</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">330 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">330 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">330 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">330 лв</td>
+                                    </tr>
+                                    <tr>
+                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Продължителност">2 Месеца</td>
+                                        <td data-label="Часове">60 уч.часа</td>
+                                        <td data-label="Цена">330 лв</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </section>
 
 
     </main>

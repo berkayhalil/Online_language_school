@@ -85,7 +85,7 @@
 #div-container-for-boxes {
   display: flex;
   flex-direction: row; /* Stacks the boxes vertically */
-  gap: 50px; /* Adds space between the box elements */
+  gap: 100px; /* Adds space between the box elements */
   margin-top: 20px;
   flex-wrap: wrap;
   justify-content: center;
@@ -95,7 +95,7 @@
 .box{
   background-color: #edf0f4;
   height: 290px;
-  width: 220px;
+  width: 250px;
   display:flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -112,9 +112,9 @@
 }
 
 .box-img{
-  width: 200px;
-  height: 200px;
-  margin-bottom: 23px;
+  width: 220px;
+  height: 220px;
+  margin-bottom: 17px;
   transition: transform .1s;
 }
 
@@ -157,6 +157,23 @@
     min-height: 846px;
     background-size: cover;
   }
+  .box{
+    width: 100%;
+  }
+  .box-img{
+    width: 268px;
+    height: 268px;
+    margin-bottom: -20px;
+  }
+  #quality-img{
+    margin-bottom: 30px;
+    height: 190px;
+    width: 190px;
+  }
+  #div-container-for-boxes{
+    width: 100%;
+    gap: 70px;
+  }
   .home-section::after {
     background-image: url("/images/long-black-curved-arrows2-set-260nw-2482787799.png");
     top: -25px;
@@ -185,12 +202,6 @@
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
-  }
-  .box-img{
-    width: 220px;
-    height: 220px;
-    margin-bottom: 17px;
-    transition: transform .1s;
   }
 }
 
