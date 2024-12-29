@@ -1,8 +1,4 @@
 
-#body-home {
-  margin: 0;
-  font-family: sans-serif;
-}
 .home-section {
   position: relative;
   display: flex; /* Use Flexbox */

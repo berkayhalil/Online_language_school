@@ -1,0 +1,36 @@
+#english-courses-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    padding: 20px;
+  }
+
+  #en-courses-div{
+    width: 70%;
+  }
+  .en-courses-p{
+    font-weight: bold;
+    line-height: 20px;
+     text-align:justify;
+  }
+  
+  ul{
+    line-height: 24px;
+    margin-left: -10px;
+  }
+  ul li::marker{
+    color: var(--main-body-dark-color);
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    #en-courses-div{
+        width: 100%;
+      }
+  }
+
+  #england-flag-img{
+    width: 100%;
+    border-radius: 5px;
+  }

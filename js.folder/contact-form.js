@@ -1,10 +1,8 @@
-const header = document.getElementById("contact_us"); // Get the header element
-const originalHeaderText = header.innerHTML; // Store the original header text
-let formOpenedWithCourseButton = false; // Flag to track if form opened with the second button
-
-// Open the contact form (triggered by either of the buttons)
+const header = document.getElementById("contact_us"); 
+const originalHeaderText = header.innerHTML;
+let formOpenedWithCourseButton = false; 
 function openContactForm() {
-    // Show the form
+    
     document.getElementById("myOverlay").style.display = "block";
     document.body.style.overflow = "hidden";
     // Only add the select if the form is opened with the second button

@@ -12,8 +12,8 @@
                     class="navbar-text">КУРСОВЕ</span></a>
             <div class="dropdown-content">
                 <a href="#course1">Започващи курсове</a>
-                <a href="#course2">Курсове по немски език</a>
-                <a href="#course3">Курсове по английски език</a>
+                <a href="english-courses.php">Курсове по английски език</a>
+                <a href="#course3">Курсове по немски език</a>
             </div>
         </div>
 

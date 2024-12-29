@@ -1,10 +1,7 @@
-#body-for-us {
-  margin: 0;
-  font-family: sans-serif;
-}
-
 #h1-about-us {
   color: var(--main-body-dark-color);
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
 
 #section-about-us {
