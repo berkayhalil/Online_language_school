@@ -1,4 +1,4 @@
-#english-courses-section {
+.english-courses-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -6,7 +6,7 @@
     padding: 20px;
   }
 
-  #en-courses-div{
+  .en-courses-div{
     width: 70%;
   }
   .en-courses-p{
@@ -22,15 +22,80 @@
   ul li::marker{
     color: var(--main-body-dark-color);
   }
-  
 
-  @media screen and (max-width: 800px) {
-    #en-courses-div{
-        width: 100%;
-      }
+  .collapsible {
+    background-color: var(--main-body-dark-color);
+    color: var(--text-color);
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: var(--color-focus-ligh-blue);
+  }
+
+  @media (hover: none) {
+    .active, .collapsible:hover {
+      background-color: var(--main-body-dark-color); /* Disable hover effect */
+      color: var(--text-color);
+    }
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    background-color: aliceblue;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+    margin-bottom: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  .collapsible:after {
+    content: '\002B';
+    color: var(--text-color);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+  
+  .active:after {
+    content: "\2212";
   }
 
   #england-flag-img{
     width: 100%;
     border-radius: 5px;
   }
+
+  .content p{
+    line-height: 23px;
+  }
+
+  #span-bold{
+    font-weight: bold;
+  }
+
+  .icons{
+    padding:0;
+    margin-right: 10px;
+    margin-left:-5px;
+  }
+  
+
+  @media screen and (max-width: 800px) {
+    .en-courses-div{
+        width: 100%;
+      }
+  }
+
+  

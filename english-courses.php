@@ -2,6 +2,7 @@
 <html lang="bg">
 
 <head>
+    <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" href="css.folder\styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -20,8 +21,8 @@
     </header>
 
     <main>
-        <section id="english-courses-section">
-            <div id="en-courses-div">
+        <section class="english-courses-section">
+            <div class="en-courses-div">
                 <p class="en-courses-p">
                     Ако искате да научите или да усъвършенствате английския си език, УЧЕБЕН ЦЕНТЪР „БЕКОЛИНГО“ е вашето
                     място!
@@ -63,6 +64,46 @@
                 <img id="england-flag-img" src="/images/pexels-photo-21070602.jpg">
             </div>
         </section>
+
+        <section class="english-courses-section">
+            <div class="en-courses-div">
+
+                <button type="button" class="collapsible"><span class="fa fa-group icons"></span>Групово онлайн
+                    обучение</button>
+                <div class="content">
+                    <p>Курсовете по английски в Bekolingo са съобразени с Общата Европейска
+                        Езикова Рамка (ОЕЕР) и се водят по учебната система на <span id="span-bold">Oxford University
+                            Press, English File 3rd издание</span>. Тази система е много популярна сред нашите
+                        ученици заради леснотата и ефективността на материала.<br><br>
+                        Онлайн уроците ни по английски са организирани в нива:<span id="span-bold"> А1.1, А1.2,
+                            А2.1,
+                            А2.2, В1.1 и В1.2, B2.1, B2.2</span>
+                        като всяко ниво включва <span id="span-bold">60 учебни часа (по 40 минути всеки)</span>.<br><br>
+                        Групите са с <span id="span-bold"> максимален брой от 6-8 ученици</span>, за да осигурим
+                        персонализирано внимание на всеки.
+                    </p>
+                </div>
+
+                <button type="button" class="collapsible"><span class="fa fa-user icons"></span>Индивидуално онлайн
+                    обучение</button>
+                <div class="content">
+                    <p>Езиков център „Bekolingo“ предлага индивидуално обучение с три различни пакета от учебни
+                        часове (един учебен час е с продължителност 40 минути):
+                    <ul>
+                        <li>10 учебни часа – курсът трябва да бъде завършен в рамките на 1 месец.</li>
+                        <li>24 учебни часа – обучението може да продължи до 3 месеца.</li>
+                        <li>48 учебни часа – срокът за завършване е до 6 месеца.</li>
+                    </ul>
+
+                    График на уроците
+                    Индивидуалното обучение започва в рамките на десет работни дни след записване. Учениците сами
+                    определят удобните за тях дни и часове за провеждане на онлайн занятията в езиков център
+                    „Bekolingo“.
+                    </p>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <footer>
@@ -70,6 +111,7 @@
     </footer>
 
     <script src="/js.folder/navbar.js"></script>
+    <script src="/js.folder/en-courses.js"></script>
 </body>
 
 </html>

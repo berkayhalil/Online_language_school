@@ -2,6 +2,10 @@
 <html lang="bg">
 
 <head>
+    <meta name="description"
+        content="Езикова школа Bekolingo предлага онлайн уроци по английски език. Започнете лесно и уверено с индивидуални и групови уроци.">
+    <meta name="keywords" content="уроци по английски, онлайн обучение, езикова школа, Bekolingo">
+    <meta name="author" content="Bekolingo">
     <link rel="stylesheet" href="css.folder\styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">

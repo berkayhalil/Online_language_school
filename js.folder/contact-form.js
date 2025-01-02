@@ -5,7 +5,6 @@ function openContactForm() {
     
     document.getElementById("myOverlay").style.display = "block";
     document.body.style.overflow = "hidden";
-    // Only add the select if the form is opened with the second button
     if (formOpenedWithCourseButton) {
         addSelectToContactForm(); // Add the select element if opened with the second button
     }
