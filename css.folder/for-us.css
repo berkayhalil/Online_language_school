@@ -1,82 +1,157 @@
-#h1-about-us {
+.h1-about-us {
   color: var(--main-body-dark-color);
-  text-decoration: none;
+  border-left: 2px solid var(--main-body-dark-color);
+  border-right: 2px solid var(--main-body-dark-color);
+  padding: 0px 10px;
 }
 
 #section-about-us {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
   padding: 20px;
+}
+.img-about-us-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 370px;  
+  overflow: hidden; 
+}
+
+.general-img-about-us {
+  width: 100%; 
+  height: 100%; 
+  object-fit: contain; 
 }
 
 .main-div-about-us {
   flex: 1;
-  display: flex; /* This makes the parent container a flex container */
-  flex-direction: column; /* Aligns children (divs) in a row */
+  display: flex; 
+  flex-direction: column; 
   justify-content: start;
-  align-items: center;
+  align-items: start;
   max-width: 100%;
+  overflow-x: hidden;
+}
+#new-line{
+  width: 100%;
+  margin: 0;
 }
 
-#div-picture-about-us {
-  flex: 1;
-  max-width: 100%;
-  align-items: center;
+.main-div
+{
   display: flex;
-  flex-direction: column;
-  border-radius: 8px;
-}
-
-#div-picture-about-us img {
-  border-radius: 15px;
-  min-height: 300px;
-  height: 340px;
-  margin-top: 7%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
   width: 80%;
+  flex-wrap: wrap;
+  gap:40px;
 }
 
 .div-about-us {
   display: flex;
-  justify-content: flex-start; /* Align items to the left */
-  align-items: flex-start; /* Align items to the top */
-  width: 80%; /* Ensure full width */
+  justify-content: flex-start; 
+  align-items: flex-start; 
+  width: 100%; 
+}
+.div-about-us-description{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
 }
 
-#p-about-us-description {
+.p-about-us-description {
   text-align: justify;
   text-align-last: left;
   line-height: 23px;
-  font-size: 19px;
-  color: var(--p-text-color);
+  font-size: 17px;
   margin-top: 2px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  width: 100%;
+  text-align: justify;
+}
+
+#how-goes-ol li{
+margin-bottom: 10px;
+}
+
+.for-us-ul li{
+margin-bottom: 10px;
 }
 
 @media (max-width: 900px) {
-  #section-about-us {
+  .img-about-us-div {
+    width: 60%; 
+  }
+}
+
+@media (max-width: 600px) {
+  .img-about-us-div {
+    width: 100%; 
+  }
+}
+
+
+@media (max-width: 900px) {
+ .main-div {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    width: 100%;
   }
-  #h1-about-us {
-    text-decoration: underline;
-    text-underline-offset: 5px;
+ 
+  .order1{
+    order:1;
+  }
+  .order2{
+    order:2;
+  }
+  .order3{
+    order:3;
+  }
+  .order4{
+    order:4;
+  }
+  .order5{
+    order:5;
+  }
+  .order6{
+    order:6;
+  }
+  .order7{
+    order:7;
+  }
+  .order8{
+    order:8;
+  }
+  #new-line{
+    display: none;
+  }
+  .img-about-us-div{
+    max-width: 200px;
+    max-width: 90%;
+    margin-top: -40px;
+  }
+  
+  .h1-about-us {
+   border-left: 2px solid var(--main-body-dark-color);
+   border-right: 2px solid var(--main-body-dark-color);
   }
   .div-about-us {
     justify-content: center;
   }
-  #p-about-us-description {
+  .p-about-us-description {
     text-align: center;
     text-align-last: center;
     width: 100%;
   }
-  #div-picture-about-us img {
-    width: 100%;
-    margin-top: 0;
+  #how-goes-ol li{
+    text-align: left;
+  }
+  .for-us-ul li{
+    text-align: left;
   }
 }

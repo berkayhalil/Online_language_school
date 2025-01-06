@@ -1,60 +1,4 @@
-.bg-shape, .bg.shape2 {
-  position: relative;
-  overflow: hidden;
-  padding: 50px;
-}
 
-.bg-shape:after {
-  content: '';
-  position: absolute;
-  width: 100vw; /* Full width of the viewport */
-  border-bottom: 200px solid transparent;
-  border-left:3000px solid aliceblue;
-  border-top: 300px solid transparent;
-  border-right: 300px solid transparent;
-  top:20%; /* Position vertically */
-  background-image: linear-gradient(to right, #ff7e5f, #feb47b);
-  left: 0; /* Start from the left edge */
-   /* Behind other elements */
-   box-sizing: border-box;
-   z-index: -1;
-  }
-
-  .bg-shape2::after{
-    content: '';
-  position: absolute;
-  width: 100vw; /* Full width of the viewport */
-  border-bottom: 200px solid transparent;
-  border-left:3000px solid aliceblue;
-  border-top: 300px solid transparent;
-  border-right: 300px solid transparent;
-  top: 45%; /* Position vertically */
-  left: 0; /* Start from the left edge */
-   /* Behind other elements */
-   box-sizing: border-box;
-   z-index: -1;
-   display: none;
-  }
-
-  .bg-shape3::after{
-    content: '';
-  position: absolute;
-  width: 100vw; /* Full width of the viewport */
-  border-bottom: 200px solid transparent;
-  border-left:3000px solid aliceblue;
-  border-top: 300px solid transparent;
-  border-right: 300px solid transparent;
-  top: 75%; /* Position vertically */
-  left: 0; /* Start from the left edge */
-   /* Behind other elements */
-   box-sizing: border-box;
-   z-index: -1;
-   display: none;
-  }
-
-
-
-  
 .price-general-section {
   display: flex;
   flex-direction: column;
@@ -128,7 +72,7 @@ tr:nth-child(odd) {
   font-weight: bold;
 }
 
-@media screen and (max-width: 880px) {
+@media screen and (max-width: 1040px) {
   .price-table-general {
     border: 0;
     width: 100%;
@@ -176,10 +120,6 @@ tr:nth-child(odd) {
   }
   
   .price-table-general td::before {
-    /*
-    * aria-label has no advantage, it won't be read inside a table
-    content: attr(aria-label);
-    */
     content: attr(data-label);
     float: left;
     font-weight: bold;
@@ -196,3 +136,4 @@ tr:nth-child(odd) {
     box-shadow: none;
   }
 }
+

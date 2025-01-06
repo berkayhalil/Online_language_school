@@ -28,6 +28,98 @@ html {
   background-color: aliceblue;
 }
 
+
+/*-------------------------fade in effects------------------------- */
+.fadeInBottom {
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fadeInBottom.visible {
+  opacity: 1; 
+  transform: translateY(0); 
+}
+
+.fadeInRight {
+  opacity: 0; 
+  transform: translateX(70px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fadeInRight.visible {
+  opacity: 1; 
+  transform: translateX(0); 
+}
+
+.fadeInLeft {
+  opacity: 0; 
+  transform: translateX(-70px); 
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.fadeInLeft.visible {
+  opacity: 1;
+  transform: translateX(0); 
+}
+
+.bg-shape, .bg.shape2 {
+  position: relative;
+  overflow: hidden;
+  padding: 50px;
+}
+
+/*-------------------------fade in effects------------------------- */
+
+/*-------------------------Background shapes------------------------- */
+
+.bg-shape:after {
+  content: '';
+  position: absolute;
+  width: 100vw; /* Full width of the viewport */
+  border-bottom: 200px solid transparent;
+  border-left:3000px solid #f0f8ff;
+  border-top: 300px solid transparent;
+  border-right: 300px solid transparent;
+  top:20%; 
+  left: 0; 
+   /* Behind other elements */
+   box-sizing: border-box;
+   z-index: -1;
+  }
+
+  .bg-shape2::after{
+    content: '';
+  position: absolute;
+  width: 100vw; /* Full width of the viewport */
+  border-bottom: 200px solid transparent;
+  border-left:3000px solid aliceblue;
+  border-top: 300px solid transparent;
+  border-right: 300px solid transparent;
+  top: 45%; /* Position vertically */
+  left: 0; /* Start from the left edge */
+   /* Behind other elements */
+   box-sizing: border-box;
+   z-index: -1;
+   display: none;
+  }
+
+  .bg-shape3::after{
+    content: '';
+  position: absolute;
+  width: 100vw; /* Full width of the viewport */
+  border-bottom: 200px solid transparent;
+  border-left:3000px solid aliceblue;
+  border-top: 300px solid transparent;
+  border-right: 300px solid transparent;
+  top: 75%; /* Position vertically */
+  left: 0; /* Start from the left edge */
+   /* Behind other elements */
+   box-sizing: border-box;
+   z-index: -1;
+   display: none;
+  }
+
 @media (max-width: 900px) {
  .h1-top{
   font-size: 29px;

@@ -118,16 +118,7 @@
   transform: scale(1.1);
 }
 
-.box {
-  opacity: 0; /* Initially hidden */
-  transform: translateY(20px); /* Move down slightly */
-  transition: opacity 0.5s ease, transform 0.5s ease;
-}
 
-.box.visible {
-  opacity: 1; /* Fully visible */
-  transform: translateY(0); /* Reset position */
-}
 
 
 @media (hover: none) {

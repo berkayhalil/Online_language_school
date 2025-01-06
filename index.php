@@ -16,7 +16,7 @@
     </title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="/js.folder/home-section.js" defer></script>
+    <script src="/js.folder/fadeIn.js" defer></script>
 </head>
 
 <body id="body-home">
@@ -72,17 +72,17 @@
 
             <div id="div-container-for-boxes">
 
-                <div class="box">
+                <div class="box fadeInBottom">
                     <img class="box-img" src="/images/12742.png" alt="екип от позитивни и опитни преподаватели">
                     <p>ЕКИП ОТ ПОЗИТИВНИ И ОПИТНИ ПРEПОДАВАТЕЛИ</p>
                 </div>
 
-                <div class="box">
+                <div class="box fadeInBottom">
                     <img class="box-img" src="/images/12741.png" alt="img">
                     <p>ПРОГРАМА, СЪОБРАЗЕНА С ВАШИТЕ НУЖДИ</p>
                 </div>
 
-                <div class="box">
+                <div class="box fadeInBottom">
                     <img class="box-img" id="quality-img" src="/images/074e51ef65927a0eaf7c68d8e36013b6.png" alt="img">
                     <p>ДОСТЪПНО И ЕФЕКТИВНО ОБУЧЕНИЕ</p>
                 </div>
