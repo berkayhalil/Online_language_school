@@ -10,6 +10,7 @@
   align-items: center;
   width: 100%;
   text-align: center;
+  margin-top: 40px;
 }
 
 .board{
@@ -25,6 +26,17 @@
 
 .text-light{
   color:var(--color-light)
+}
+.swiper-pagination-bullet {
+  background-color: aliceblue; /* Change to your desired color */
+  opacity: 0.6; /* Adjust transparency */
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #007AFF; /* Change to your desired active dot color */
+  opacity: 1; /* Fully opaque */
+  height: 9px;
+  width: 9px;
 }
 
 .swiper .swiper-slide .flex{
@@ -115,6 +127,9 @@ color: #96a7e4
 @media (max-width: 800px) {
   .swiper { 
     width: 70%; 
+  }
+  .container{
+    margin-top: 20px;
   }
 
   .swiper .swiper-slide .flex {

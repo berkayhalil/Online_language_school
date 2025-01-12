@@ -43,7 +43,7 @@ html {
 
 .fadeInRight {
   opacity: 0; 
-  transform: translateX(70px); 
+  transform: translateX(10px); 
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -54,7 +54,7 @@ html {
 
 .fadeInLeft {
   opacity: 0; 
-  transform: translateX(-70px); 
+  transform: translateX(-10px); 
   transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
@@ -119,6 +119,16 @@ html {
    z-index: -1;
    display: none;
   }
+
+  .background-polygon {
+    display: flex;
+    justify-content: center;
+    height:60px; /* Full viewport height */
+    width: 100%;
+    background-color: var(--main-body-dark-color); /* Navy blue color */
+    clip-path: polygon(-10% 100%, 30% 30%, 70% 30%, 110% 100%);
+  }
+  
 
 @media (max-width: 900px) {
  .h1-top{

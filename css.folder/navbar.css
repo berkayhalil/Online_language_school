@@ -132,7 +132,7 @@ i.fa-caret-down {
 }
 
 /* For smaller screens (less than 600px) */
-@media screen and (max-width: 838px) {
+@media screen and (max-width: 856px) {
   /* Hide all links except the icon initially */
   .topnav #navbar-right a {
     display: none;
@@ -199,7 +199,7 @@ i {
   padding: 19px 23px;
 }
 
-@media screen and (max-width: 970px) {
+@media screen and (max-width: 988px) {
   #phone-icon span {
     display: none;
   }

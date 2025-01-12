@@ -59,7 +59,9 @@
             </div>
             <hr class="home-page-hr">
 
-            <div id="filologists-info-div">
+
+
+            <div id="filologists-info-div" class="fadeInBottom">
                 <p id="filologists-info-p">Нашият екип от опитни филолози е на разположение да ви предложи обучение,
                     което съчетава съвременни методи с доказани практики. Стремим се да създадем
                     уникална учебна атмосфера, в която всеки курсист може да се развива и да постигне
@@ -101,7 +103,7 @@
 
             <div id="main-div-how-we-work">
 
-                <div class="h4-div-description">
+                <div class="h4-div-description fadeInBottom">
                     <h4 class="h4-how-we-work-general">1. Определяне на ниво</h4>
                     <p class="p-how-we-work"> Преди да започнем с обучението, ще проведем безплатен тест за определяне
                         на
@@ -109,14 +111,14 @@
                         съобразена с текущите ви знания.</p>
                 </div>
 
-                <div class="h4-div-description">
+                <div class="h4-div-description fadeInBottom">
                     <h4 class="h4-how-we-work-general">2. Избор на курс</h4>
                     <p class="p-how-we-work">След като определим нивото ви, ще ви предложим подходящ курс или програма,
                         която
                         да отговаря на вашите нужди и цели.</p>
                 </div>
 
-                <div class="h4-div-description">
+                <div class="h4-div-description fadeInBottom">
                     <h4 class="h4-how-we-work-general">3. Обучение</h4>
                     <p class="p-how-we-work">Ще започнете с индивидуални или групови уроци (до 5-8 души),
                         в зависимост от вашето предпочитание, с нашите опитни и мотивирани преподаватели,
@@ -128,9 +130,50 @@
 
         </section>
 
+        <section id="faq-section">
+
+            <div class="faq-section-main-div fadeInBottom">
+                <div class="h2-div-general">
+                    <h2 class="h2-general">Често задавани въпроси</h2>
+                </div>
+                <hr class="home-page-hr" id="above-collapsible-hr">
+
+                <button type="button" class="collapsible2">Как да започна
+                    курс?</button>
+                <div class="content">
+                    <p class="faq-answer">За да започнете курс, попълнете формата за контакт или се свържете с нас за
+                        безплатна консултация.</p>
+                </div>
+
+                <button type="button" class="collapsible2">Как ще ми бъде
+                    предоставен учебният материал?</button>
+                <div class="content">
+                    <p class="faq-answer">Учебните материали ще бъдат предоставени в дигитален вариант, включително
+                        PDF документи, линкове и видео уроци.</p>
+                </div>
+
+                <button type="button" class="collapsible2">Мога ли да получа
+                    сертификат след завършване на курс?</button>
+                <div class="content">
+                    <p class="faq-answer">Да, след успешно завършване на курса ще получите сертификат, който потвърждава
+                        нивото на вашето владеене на езика.</p>
+                </div>
+
+                <button type="button" class="collapsible2">Колко време траят курсовете?</button>
+                <div class="content">
+                    <p class="faq-answer">Всеки курс може да бъде адаптиран според вашите нужди, но обикновено трае от 2
+                        до 4 месеца, в зависимост от нивото и интензивността.</p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="background-polygon"></div>
+
         <section id="testimonials-section">
 
-            <div class="container">
+            <div class="container fadeInBottom">
                 <div class="board">
                     <h2 class="text-light">Отзиви от курсисти</h2>
 
@@ -156,7 +199,7 @@
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
                                             <i class="fas fa-star"></i>
-                                            <i class="fas fa-star"></i> <!-- Empty star for unfilled rating -->
+                                            <i class="fas fa-star"></i>
                                         </div>
                                         <span></span>
                                     </div>
@@ -263,6 +306,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="/js.folder/testimonials-section.js"></script>
+    <script src="/js.folder/collapsible.js"></script>
 </body>
 
 </html>

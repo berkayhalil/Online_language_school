@@ -20,7 +20,6 @@
     </header>
 
     <main>
-
         <div class="bg-shape">
             <div class="bg-shape2">
                 <div class="bg-shape3">
@@ -126,31 +125,31 @@
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Курс"><span id="course-span">A1</span></td>
                                         <td data-label="Продължителност">2 Месеца</td>
                                         <td data-label="Часове">60 уч.часа</td>
                                         <td data-label="Цена">330 лв</td>
                                     </tr>
                                     <tr>
-                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Курс"><span id="course-span">A2</span></td>
                                         <td data-label="Продължителност">2 Месеца</td>
                                         <td data-label="Часове">60 уч.часа</td>
                                         <td data-label="Цена">330 лв</td>
                                     </tr>
                                     <tr>
-                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Курс"><span id="course-span">B1</span></td>
                                         <td data-label="Продължителност">2 Месеца</td>
                                         <td data-label="Часове">60 уч.часа</td>
                                         <td data-label="Цена">330 лв</td>
                                     </tr>
                                     <tr>
-                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Курс"><span id="course-span">B2</span></td>
                                         <td data-label="Продължителност">2 Месеца</td>
                                         <td data-label="Часове">60 уч.часа</td>
                                         <td data-label="Цена">330 лв</td>
                                     </tr>
                                     <tr>
-                                        <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                                        <td data-label="Курс"><span id="course-span">C1</span></td>
                                         <td data-label="Продължителност">2 Месеца</td>
                                         <td data-label="Часове">60 уч.часа</td>
                                         <td data-label="Цена">330 лв</td>

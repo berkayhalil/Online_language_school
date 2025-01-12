@@ -34,7 +34,7 @@
                     предлагаме:
                 </p>
 
-                <ul>
+                <ul class="ul-general">
                     <li>
                         Онлайн групови курсове, които ще ви помогнат да подобрите комуникативните си умения
                     </li>
@@ -111,7 +111,7 @@
     </footer>
 
     <script src="/js.folder/navbar.js"></script>
-    <script src="/js.folder/en-courses.js"></script>
+    <script src="/js.folder/collapsible.js"></script>
 </body>
 
 </html>

@@ -30,7 +30,6 @@
             <div class="main-div">
 
                 <div class="main-div-about-us order1 fadeInLeft">
-
                     <div class="div-about-us">
                         <h1 class="h1-about-us">Кои сме ние?</h1>
                     </div>
@@ -127,8 +126,6 @@
                     </div>
 
                     <div class="div-about-us-description">
-                        <p class="p-about-us-description">В Bekolingo прилагаме иновативни и доказани методи за
-                            обучение, които са:</p>
                         <ul class="for-us-ul">
                             <li>Гъвкав график, който позволява да учите по всяко време и от всяко място.</li>
                             <li>Достъп до висококачествени материали и ресурси.</li>

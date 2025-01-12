@@ -5,6 +5,7 @@ footer{
     justify-content: center;
    /* background-image: linear-gradient(to right, #083E85, #075c94,  #083E85);*/
    background-color: var(--main-body-dark-color);
+   margin: 0;
 }
 
 #footer-main-div{

@@ -12,7 +12,7 @@
   .en-courses-p{
     font-weight: bold;
     line-height: 20px;
-     text-align:justify;
+    text-align:justify;
   }
   
   .en-courses-ul{
@@ -21,6 +21,10 @@
   }
   ul li::marker{
     color: var(--main-body-dark-color);
+  }
+
+  .ul-general li{
+    margin-bottom: 10px
   }
 
   .collapsible {
@@ -58,6 +62,7 @@
     margin-bottom: 10px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .collapsible:after {
@@ -75,6 +80,7 @@
   #england-flag-img{
     width: 100%;
     border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .content p{
