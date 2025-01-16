@@ -12,7 +12,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
-    <link rel="stylesheet" href="../css.folder/styles.css">
 </head>
 
 <body id="body-for-us">
@@ -142,8 +141,8 @@
         </section>
     </main>
     <?php include 'footer.php' ?>
-    <script src="/js.folder/navbar.js"></script>
-    <script src="/js.folder/fadeIn.js"></script>
+    <script src="js.folder/navbar.js"></script>
+    <script src="js.folder/fadeIn.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="/css.folder/styles.css">
+    <link rel="stylesheet" href="css.folder/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="utf-8">
@@ -16,7 +16,7 @@
     </title>
 
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script src="/js.folder/fadeIn.js" defer></script>
+    <script src="js.folder/fadeIn.js" defer></script>
 </head>
 
 <body id="body-home">
@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <script src="/js.folder/navbar.js"></script>
+            <script src="js.folder/navbar.js"></script>
         </section>
 
         <section id="why-us-section">
@@ -75,17 +75,17 @@
             <div id="div-container-for-boxes">
 
                 <div class="box fadeInBottom">
-                    <img class="box-img" src="/images/12742.png" alt="екип от позитивни и опитни преподаватели">
+                    <img class="box-img" src="images/12742.png" alt="екип от позитивни и опитни преподаватели">
                     <p>ЕКИП ОТ ПОЗИТИВНИ И ОПИТНИ ПРEПОДАВАТЕЛИ</p>
                 </div>
 
                 <div class="box fadeInBottom">
-                    <img class="box-img" src="/images/12741.png" alt="img">
+                    <img class="box-img" src="images/12741.png" alt="img">
                     <p>ПРОГРАМА, СЪОБРАЗЕНА С ВАШИТЕ НУЖДИ</p>
                 </div>
 
                 <div class="box fadeInBottom">
-                    <img class="box-img" id="quality-img" src="/images/074e51ef65927a0eaf7c68d8e36013b6.png" alt="img">
+                    <img class="box-img" id="quality-img" src="images/074e51ef65927a0eaf7c68d8e36013b6.png" alt="img">
                     <p>ДОСТЪПНО И ЕФЕКТИВНО ОБУЧЕНИЕ</p>
                 </div>
 
@@ -305,8 +305,8 @@
     <?php include 'footer.php' ?>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="/js.folder/testimonials-section.js"></script>
-    <script src="/js.folder/collapsible.js"></script>
+    <script src="js.folder/testimonials-section.js"></script>
+    <script src="js.folder/collapsible.js"></script>
 </body>
 
 </html>

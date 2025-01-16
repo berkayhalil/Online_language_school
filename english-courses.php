@@ -9,7 +9,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
-    <link rel="stylesheet" href="../css.folder/styles.css">
 </head>
 
 <body id="body-english-courses">
@@ -61,7 +60,7 @@
                 <p class="en-courses-p">Независимо дали искате да научите основите на езика или да развиете
                     напреднали умения, нашето онлайн обучение е идеалният избор за вас. Присъединете се
                     към нас и развийте своите умения по английски език в удобна и гъвкава среда!</p>
-                <img id="england-flag-img" src="/images/pexels-photo-21070602.jpg">
+                <img id="england-flag-img" src="images/pexels-photo-21070602.jpg">
             </div>
         </section>
 
@@ -110,8 +109,8 @@
 
     </footer>
 
-    <script src="/js.folder/navbar.js"></script>
-    <script src="/js.folder/collapsible.js"></script>
+    <script src="js.folder/navbar.js"></script>
+    <script src="js.folder/collapsible.js"></script>
 </body>
 
 </html>

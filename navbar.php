@@ -1,9 +1,9 @@
 <div class="topnav" id="myTopnav">
-    <img id="logo-id" src="/images/Bekolingologo.png" alt="logo">
+    <img id="logo-id" src="images/Bekolingologo.png" alt="logo">
     <div id="navbar-right">
         <a id="phone-icon" href="tel:+359895881182" onclick="collapseMenu()"><i class="fa-solid fa-phone"></i> <span>089
                 588 1182</span></a>
-        <a id="home-icon" href="/" onclick="collapseMenu()"><i class="fas fa-home"></i></a>
+        <a id="home-icon" href="index.php" onclick="collapseMenu()"><i class="fas fa-home"></i></a>
         <a href="for-us.php" onclick="collapseMenu()"><span class="navbar-text">ЗА НАС</span></a>
 
 

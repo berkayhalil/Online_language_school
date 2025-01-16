@@ -8,7 +8,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
-    <link rel="stylesheet" href="../css.folder/styles.css">
 </head>
 
 <body id="body-prices">
@@ -162,7 +161,7 @@
 
     </main>
     <?php include 'footer.php' ?>
-    <script src="/js.folder/navbar.js"></script>
+    <script src="js.folder/navbar.js"></script>
 </body>
 
 </html>
