@@ -1,14 +1,25 @@
 .english-courses-section {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     padding: 20px;
+    margin-top: 15px;
   }
 
   .en-courses-div{
     width: 70%;
   }
+
+  .en-courses-div-collapsible{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -25px;
+  }
+
   .en-courses-p{
     font-weight: bold;
     line-height: 20px;
@@ -87,7 +98,7 @@
     line-height: 23px;
   }
 
-  #span-bold{
+  .span-bold{
     font-weight: bold;
   }
 
@@ -96,12 +107,148 @@
     margin-right: 10px;
     margin-left:-5px;
   }
+
+  #english-courses-cards-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+  }
+
+  #main-div-english-courses-cards{
+    display: flex;
+    flex-direction: row;
+    gap:50px;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    flex-wrap: wrap;
+    gap: 80px;
+  }
+
+  .en-courses-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    height: 380px;
+    width: 290px;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+  }
+
+  .card-headings{
+    width: 100%;
+    display: block;
+    box-sizing: border-box;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 18px;
+    color: var(--text-color);
+    background-color: var(--main-body-dark-color);
+  }
+
+  .en-courses-card:hover{
+    transform: scale(1.03);
+  }
+
+  .pricing-ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    padding: 0;
+  }
+  .pricing-ul li{
+    padding:12px;
+    border-bottom: 1px solid rgb(223, 215, 215);
+  }
+
+  .enroll-btn {
+    display: flex;
+    border-radius: 4px;
+    background-color:var(--main-body-dark-color);
+    border: none;
+    color: var(--text-color);
+    text-align: center;
+    font-size: 32px;
+    padding: 12px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    height: 100%;
+    width: 100%;
+    transition: all 0.5s;
+    cursor: pointer;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .enroll-btn:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;  
+    top: 13px;
+    right: 0;
+    transition: 0.5s;
+  }
+  
+  .enroll-btn:hover{
+    padding-right: 24px;
+    padding-left:8px;
+    background-color: #1f569e;
+  }
+  
+  .enroll-btn:hover:after {
+    opacity: 1;
+    right: 30px;
+  }
   
 
   @media screen and (max-width: 800px) {
     .en-courses-div{
         width: 100%;
       }
+      #main-div-english-courses-cards{
+        width: 100%;
+      }
+      
   }
+  @media screen and (max-width: 600px){
+    .en-courses-card{
+      width: 100%;
+    }
+    #main-div-english-courses-cards{
+      gap:50px;
+    }
+  }
+
+  @media (hover: none) {
+    .enroll-btn:hover {
+      padding-right: 16px; 
+      padding-left: 16px; 
+      background-color: var(--main-body-dark-color);
+    }
+  
+    .enroll-btn:hover:after {
+      opacity: 1;
+      right: 19%; 
+    }
+    .enroll-btn:after{
+      opacity: 1;
+      right: 19%;
+    }
+    .en-courses-card:hover {
+      transform: none; 
+    }
+  }
+
+  
 
   

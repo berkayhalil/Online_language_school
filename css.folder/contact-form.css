@@ -83,6 +83,9 @@
 .contact_spans {
   margin: 0 5px 0 15px;
 }
+.form-contact-spans{
+  font-size: 14px;
+}
 
 #form-message {
   font-size: 16px;

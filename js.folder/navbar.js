@@ -9,7 +9,7 @@ function myFunction() {
   } else {
     x.className = "topnav";
     body.classList.remove("no-scroll");
-    dropdownContent.style.display="none";
+    dropdownContent.style.display = "none";
   }
 }
 
@@ -20,7 +20,7 @@ function collapseMenu() {
 
   if (x.className.includes("responsive")) {
     x.className = "topnav";
-    dropdownContent.style.display="none";
+    dropdownContent.style.display = "none";
   }
 }
 
@@ -32,65 +32,59 @@ window.addEventListener("resize", function () {
   if (window.innerWidth > 600) {
     x.className = "topnav";
     dropdownContent.style.display = "none";
-  }else {
-    if (x.className.includes("responsive")) {
-      dropdownContent.style.display = "none"; // Keep it closed on smaller screens
-    }
+  } else if (x.className.includes("responsive")) {
+    dropdownContent.style.display = "none"; // Keep it closed on smaller screens
   }
 });
 
 function toggleDropdown() {
   var dropdownContent = document.querySelector(".dropdown-content");
   if (dropdownContent) {
-      dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
+    dropdownContent.style.display = dropdownContent.style.display === "block" ? "none" : "block";
   }
 }
 
+// Check if dropdown element exists before adding event listeners
 var dropdown = document.querySelector(".dropdown");
-dropdown.addEventListener("mouseenter", function() {
-  if (window.innerWidth > 650) {
-    var dropdownContent = document.querySelector(".dropdown-content");
-    dropdownContent.style.display = "block";
-    dropdownContent.focus();
-  }
-});
+if (dropdown) {
+  dropdown.addEventListener("mouseenter", function () {
+    if (window.innerWidth > 650) {
+      var dropdownContent = document.querySelector(".dropdown-content");
+      dropdownContent.style.display = "block";
+      dropdownContent.focus();
+    }
+  });
 
-dropdown.addEventListener("mouseleave", function() {
-  if (window.innerWidth > 650) {
-    var dropdownContent = document.querySelector(".dropdown-content");
-    dropdownContent.style.display = "none";
-  }
-});
+  dropdown.addEventListener("mouseleave", function () {
+    if (window.innerWidth > 650) {
+      var dropdownContent = document.querySelector(".dropdown-content");
+      dropdownContent.style.display = "none";
+    }
+  });
+}
 
+// Combined click event listener to handle dropdown and menu
 document.addEventListener("click", function (event) {
   var dropdown = document.querySelector(".dropdown");
   var dropdownContent = document.querySelector(".dropdown-content");
+  var menu = document.getElementById("myTopnav");
+  var menuToggle = document.querySelector(".menu-toggle");
 
-  // Check if the click target is outside the dropdown
-  if (
-    dropdownContent &&
-    !dropdown.contains(event.target) &&
-    dropdownContent.style.display === "block"
-  ) {
+  // Close dropdown if clicking outside
+  if (dropdownContent && !dropdown.contains(event.target) && dropdownContent.style.display === "block") {
     dropdownContent.style.display = "none";
   }
-});
 
-
-document.addEventListener("click", function (event) {
-  var menu = document.getElementById("myTopnav");
-  var isClickInsideMenu = menu.contains(event.target); // Check if the click is inside the menu
-
-  // If the click is outside the menu and the menu is open, close the menu
+  // Close menu if clicking outside
+  var isClickInsideMenu = menu.contains(event.target);
   if (!isClickInsideMenu && menu.className.includes("responsive")) {
     menu.className = "topnav"; // Reset to original menu state
     var body = document.body;
     body.classList.remove("no-scroll"); // Enable scrolling
   }
-});
 
-// Prevent closing the menu when clicking on the toggle button
-var menuToggle = document.querySelector(".menu-toggle");
-menuToggle.addEventListener("click", function (event) {
-  event.stopPropagation(); // Prevent event from propagating to the document
+  // Prevent closing the menu when clicking on the toggle button
+  if (menuToggle && menuToggle.contains(event.target)) {
+    event.stopPropagation(); // Prevent event from propagating to the document
+  }
 });

@@ -49,7 +49,7 @@
                 </div>
             </div>
 
-            <script src="js.folder/navbar.js"></script>
+
         </section>
 
         <section id="why-us-section">
@@ -307,6 +307,7 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="js.folder/testimonials-section.js"></script>
     <script src="js.folder/collapsible.js"></script>
+    <script src="js.folder/navbar.js"></script>
 </body>
 
 </html>

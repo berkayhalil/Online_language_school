@@ -1,11 +1,19 @@
 <?php session_start() ?>
 
+<?php
+// Redirect if the script is accessed directly
+if ($_SERVER['SCRIPT_NAME'] == '/Online_language_school/contact-form.php') {
+  header("Location: /Online_language_school/contact-us.php"); // Redirect to your actual page
+  exit;
+}
+?>
+
 <form id="form" method="post" action="<?php echo htmlspecialchars('contact-form-email.php'); ?>">
   <span class="closebtn" onclick="closeContactForm()" title="Close">×</span>
   <h2 id="contact_us">ЗАЯВИ БЕЗПЛАТНА КОНСУЛТАЦИЯ</h2>
-  <input class="contact_inputes" name="name" placeholder="Име и Фамилия*" required>
+  <input class="contact_inputes" name="name" placeholder="Име и Фамилия*" autocomplete="name" required>
   <input type="tel" class="contact_inputes" name="phone-number" placeholder="Телeфон*" required pattern="\+?[0-9 ]*">
-  <input type="email" class="contact_inputes" name="email" placeholder="Имейл*" required>
+  <input type="email" class="contact_inputes" name="email" placeholder="Имейл*" autocomplete="name" required>
   <textarea id="form-message" class="contact_inputes" name="message" placeholder="Съобщение"></textarea>
 
   <div class="g-recaptcha" data-sitekey="6Lf82IgqAAAAALJsJgsigTbRciVyxlSsicQrX-7n" data-callback="enableSubmitBtn">
@@ -13,8 +21,9 @@
   <button type="submit" name="contact_form_btn" id="contact_btn" disabled="disabled">ИЗПРАЩАНЕ</button>
 
   <div id="contact_span_div">
-    <span class="fa fa-phone contact_spans"></span>089 588 1182
-    <span class="fa fa-envelope-o contact_spans"></span> bekolingo.info@gmail.com
+    <span class="fa fa-phone contact_spans"></span><span class="form-contact-spans">089 588 1182</span>
+    <span class="fa fa-envelope-o contact_spans"></span> <span
+      class="form-contact-spans">bekolingo.info@gmail.com</span>
   </div>
 </form>
 

@@ -1,0 +1,8 @@
+#contact-form2 {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-body-dark-color);
+    width: 70%;
+}
+
+
