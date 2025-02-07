@@ -1,3 +1,4 @@
+<?php session_start() ?>
 <!DOCTYPE html>
 <html lang="bg">
 
@@ -9,6 +10,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacts</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
 <body id="body-english-courses">
@@ -128,7 +130,7 @@
                             Сертификат
                         </li>
                     </ul>
-                    <button class="enroll-btn"><span>Запиши се</span></button>
+                    <button class="enroll-btn"><span>Заяви</span></button>
                 </div>
                 <div class="en-courses-card fadeInBottom">
                     <span class="card-headings">Пакет 2</span>
@@ -152,7 +154,7 @@
                             Сертификат
                         </li>
                     </ul>
-                    <button class="enroll-btn"><span>Запиши се</span></button>
+                    <button class="enroll-btn"><span>Заяви</span></button>
                 </div>
                 <div class="en-courses-card fadeInRight">
                     <span class="card-headings">Пакет 3</span>
@@ -176,13 +178,13 @@
                             Сертификат
                         </li>
                     </ul>
-                    <button class="enroll-btn"><span>Запиши се</span></button>
+                    <button class="enroll-btn"><span>Заяви</span></button>
                 </div>
             </div>
         </section>
 
         <section id="en-courses-price-table-section" class="english-courses-section">
-            <div class="en-courses-div-collapsible">
+            <div class="en-courses-priceTable-div">
                 <div class="price-h2-div">
                     <h2 class="price-h2">Цени за индивидуално онлайн обучение:</h2>
                 </div>
@@ -234,7 +236,7 @@
         </section>
 
         <section class="english-courses-section">
-            <?php include 'contact-form2.php' ?>
+            <?php include 'contact-form.php' ?>
         </section>
 
     </main>
@@ -244,6 +246,20 @@
     <script src="js.folder/navbar.js"></script>
     <script src="js.folder/collapsible.js"></script>
     <script src="js.folder/fadeIn.js"></script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("main-div-english-courses-cards").addEventListener("click", function (event) {
+                if (event.target.closest(".enroll-btn")) {
+                    let form = document.getElementById("form");
+                    let offset = 100; // Adjust if needed
+                    let formPosition = form.getBoundingClientRect().top + window.scrollY - offset;
+
+                    window.scrollTo({ top: formPosition, behavior: "smooth" });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

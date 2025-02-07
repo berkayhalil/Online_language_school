@@ -16,6 +16,7 @@ if (isset($_POST['contact_form_btn'])) {
     $phoneNumber = htmlspecialchars(strip_tags(trim($_POST['phone-number'])));
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars(strip_tags(trim($_POST['message'])));
+    $courseLevel = htmlspecialchars(strip_tags(trim($_POST['course-level'])));
     $course = htmlspecialchars(strip_tags(trim($_POST['course'])));
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -47,10 +48,10 @@ if (isset($_POST['contact_form_btn'])) {
                 $mail->addAddress('berkayhalil553@gmail.com');
 
                 // Content
-                if (!empty($course)) {
-                    $courseInfo = "<h4>Course: $course</h4>";
+                if (!empty($courseLevel)) {
+                    $courseInfo = "<h4>Level: $courseLevel</h4>";
                 } else {
-                    $courseInfo = "";
+                    $courseInfo = "<h4>Level: It is not specified</h4>";
                 }
 
                 $mail->isHTML(true);
@@ -59,8 +60,8 @@ if (isset($_POST['contact_form_btn'])) {
                             <h4>Name: $name</h4>
                             <h4>Phone: $phoneNumber</h4>
                             <h4>Email: $email</h4>
-                            $courseInfo
-                            $form_header
+                            <h4>Course: $course</h4>
+                             $courseInfo
                             <h4>Message: $message</h4>";//check for $couse if it doesn't exist then don't send it;!!!
                 // check also the form name!!!
                 if ($mail->send()) {

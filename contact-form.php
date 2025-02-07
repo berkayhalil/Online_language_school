@@ -1,5 +1,3 @@
-<?php session_start() ?>
-
 <?php
 // Redirect if the script is accessed directly
 if ($_SERVER['SCRIPT_NAME'] == '/Online_language_school/contact-form.php') {
@@ -14,6 +12,14 @@ if ($_SERVER['SCRIPT_NAME'] == '/Online_language_school/contact-form.php') {
   <input class="contact_inputes" name="name" placeholder="Име и Фамилия*" autocomplete="name" required>
   <input type="tel" class="contact_inputes" name="phone-number" placeholder="Телeфон*" required pattern="\+?[0-9 ]*">
   <input type="email" class="contact_inputes" name="email" placeholder="Имейл*" autocomplete="name" required>
+
+  <div id="form-select-el-div">
+    <select id="course-select-language" name="course" class="contact_inputes" required>
+      <option value="" disabled selected>Изберете език*</option>
+      <option value="Английски език">Английски език</option>
+      <option value="Немски език">Немски език</option>
+    </select>
+  </div>
   <textarea id="form-message" class="contact_inputes" name="message" placeholder="Съобщение"></textarea>
 
   <div class="g-recaptcha" data-sitekey="6Lf82IgqAAAAALJsJgsigTbRciVyxlSsicQrX-7n" data-callback="enableSubmitBtn">

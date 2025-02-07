@@ -11,12 +11,12 @@
     width: 70%;
   }
 
-  .en-courses-div-collapsible{
+  .en-courses-priceTable-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 70%;
     margin-top: -25px;
   }
 
@@ -194,8 +194,8 @@
     content: '»';
     position: absolute;
     opacity: 0;  
-    top: 13px;
-    right: 0;
+    top: 11px;
+    right: 20px;
     transition: 0.5s;
   }
   
@@ -207,8 +207,37 @@
   
   .enroll-btn:hover:after {
     opacity: 1;
-    right: 30px;
+    right: 70px;
   }
+
+  #body-english-courses #form{
+    margin-top: auto;
+   width: 70%;
+   height: auto;
+  }
+
+  #body-english-courses #form .closebtn{
+    display: none;
+  }
+
+  #body-english-courses #form #contact_span_div{
+   width: 330px;
+  }
+ 
+
+  #body-english-courses #form #contact_btn{
+    margin-bottom: 20px;
+  }
+  #body-english-courses #form{
+    margin-bottom: 40px;
+  }
+
+#body-english-courses .price-h2-div{
+  width: 100%;
+}
+#body-english-courses .main-div-table-prices{
+  width: 100%;
+}
   
 
   @media screen and (max-width: 800px) {
@@ -218,6 +247,18 @@
       #main-div-english-courses-cards{
         width: 100%;
       }
+      #body-english-courses #form{
+       width: 100%;
+      }
+      #body-english-courses #price-table-individual {
+        width: 100%;
+    }
+    #body-english-courses .price-h2-div{
+      width: 100%;
+    }
+    .en-courses-priceTable-div{
+      width: 100%;
+    }
       
   }
   @media screen and (max-width: 600px){
