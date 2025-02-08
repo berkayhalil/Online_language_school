@@ -7,6 +7,7 @@ if ($_SERVER['SCRIPT_NAME'] == '/Online_language_school/contact-form.php') {
 ?>
 
 <form id="form" method="post" action="<?php echo htmlspecialchars('contact-form-email.php'); ?>">
+  <input type="hidden" id="h2Value" name="form_name">
   <span class="closebtn" onclick="closeContactForm()" title="Close">×</span>
   <h2 id="contact_us">ЗАЯВИ БЕЗПЛАТНА КОНСУЛТАЦИЯ</h2>
   <input class="contact_inputes" name="name" placeholder="Име и Фамилия*" autocomplete="name" required>
@@ -37,6 +38,23 @@ if ($_SERVER['SCRIPT_NAME'] == '/Online_language_school/contact-form.php') {
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var h2Element = document.querySelector("#contact_us");
+    var hiddenInput = document.querySelector("#h2Value");
+
+    if (h2Element && hiddenInput) {
+      hiddenInput.value = h2Element.textContent;
+    }
+
+    // Ensure the value updates before submission
+    document.querySelector("#form").addEventListener("submit", function () {
+      if (h2Element && hiddenInput) {
+        hiddenInput.value = h2Element.textContent;
+      }
+    });
+  });
+</script>
 <script>
   var messageText = "<?= $_SESSION['status'] ?? '' ?>";
   var messageType = "<?= $_SESSION['status_type'] ?? 'info' ?>"; // Default to 'info' if not set

@@ -12,6 +12,7 @@ $config = include('sensitiveInfo.php'); // Load SMTP credentials
 $secretKey = $config['recaptcha_secret_key']; // Move this to the top
 
 if (isset($_POST['contact_form_btn'])) {
+    $formTitle = htmlspecialchars($_POST['form_name']);
     $name = htmlspecialchars(strip_tags(trim($_POST['name'])));
     $phoneNumber = htmlspecialchars(strip_tags(trim($_POST['phone-number'])));
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
@@ -44,8 +45,8 @@ if (isset($_POST['contact_form_btn'])) {
                 $mail->Port = 587;
 
                 // Recipients
-                $mail->setFrom('berkayhalil553@gmail.com', 'Bekolingo');
-                $mail->addAddress('berkayhalil553@gmail.com');
+                $mail->setFrom('info.bekolingo@gmail.com', 'Bekolingo');
+                $mail->addAddress('info.bekolingo@gmail.com');
 
                 // Content
                 if (!empty($courseLevel)) {
@@ -54,9 +55,20 @@ if (isset($_POST['contact_form_btn'])) {
                     $courseInfo = "<h4>Level: It is not specified</h4>";
                 }
 
+
+
                 $mail->isHTML(true);
-                $mail->Subject = 'New enquiry - Bekolingo contact form';
-                $mail->Body = "<h3>Hello, you got a new enquiry!</h3>
+                if ($formTitle == "ЗАЯВИ КУРС") {
+                    $mail->Subject = 'BEKOLINGO - New course application ';
+                    $formContent = 'Hello, you got a new application from ' . $name;
+                } else if ($formTitle == "ЗАЯВИ БЕЗПЛАТНА КОНСУЛТАЦИЯ") {
+                    $mail->Subject = 'BEKOLINGO - New consultation request';
+                    $formContent = 'Hello, you got a new consultation request from ' . $name;
+                } else if ($formTitle == "ИЗПРАТИ СЪОБЩЕНИЕ") {
+                    $mail->Subject = 'BEKOLINGO - New message';
+                    $formContent = 'BEKOLINGO - Hello you got a new message from ' . $name;
+                }
+                $mail->Body = "<h3>$formContent</h3>
                             <h4>Name: $name</h4>
                             <h4>Phone: $phoneNumber</h4>
                             <h4>Email: $email</h4>

@@ -28,7 +28,9 @@
         <section class="contact-details">
 
             <div class="contacts-container">
-
+                <p id="contatcs-p">Можете да се свържете с нас директно по телефон или да ни изпратите вашите контакти.
+                    Нашият екип ще
+                    се свърже с вас възможно най-скоро.</p>
                 <div class="contact-info">
                     <p><i class="fas fa-phone"></i> 089 588 1182</p>
                     <p><i class="fas fa-envelope"></i> bekolingo.info@gmail.com</p>
