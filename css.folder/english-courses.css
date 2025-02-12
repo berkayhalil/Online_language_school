@@ -231,6 +231,9 @@
   #body-english-courses #form{
     margin-bottom: 40px;
   }
+  #body-english-courses #form #contact_us{
+    text-align: center;
+  }
 
 #body-english-courses .price-h2-div{
   width: 100%;

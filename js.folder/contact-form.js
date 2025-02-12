@@ -1,17 +1,47 @@
 const header = document.getElementById("contact_us"); 
 const originalHeaderText = header.innerHTML;
 let formOpenedWithCourseButton = false; 
+
+
 function openContactForm() {
     const form = document.getElementById('form');
     
     document.getElementById("myOverlay").style.display = "block";
     document.body.style.overflow = "hidden";
 
-    form.style.height = "610px";
+    setFormHeight(); // Set the initial height
 
     if (formOpenedWithCourseButton) {
-        addSelectToContactForm(); // Add the select element if opened with the second button
+        addSelectToContactForm();
     }
+
+    // Listen for window resize and update form height dynamically
+    window.addEventListener("resize", setFormHeight);
+}
+
+function setFormHeight() {
+    const form = document.getElementById('form');
+    if (!form) return;
+
+    let formHeight;
+
+    if (formOpenedWithCourseButton) {
+        // If opened with the first button
+        if (window.innerWidth <= 600) {
+            formHeight = "720px"; // Smaller screens
+        } else {
+            formHeight = "650px"; // Larger screens
+        }
+    } else {
+        // If opened with the second button (Курс)
+        if (window.innerWidth <= 600) {
+            formHeight = "620px"; // Adjust as needed for smaller screens
+        } else {
+            formHeight = "590px"; // Adjust as needed for larger screens
+        }
+    }
+
+    form.style.height = formHeight;
 }
 
 // Close the contact form overlay and remove the select element if it exists
@@ -21,14 +51,21 @@ function closeContactForm() {
     document.body.style.overflow = "auto";
     // Remove the select element if it exists (for the next time the form opens)
     const selectElement = document.getElementById('level-select');
+    const radioBtnElement = document.getElementById('course-type-group');
     if (selectElement) {
         selectElement.remove();
     }
+    if(radioBtnElement){
+        radioBtnElement.remove();
+    }
+    
 
     // Revert the header text to its original value when the form is closed
     header.innerHTML = originalHeaderText;
     // Reset the flag when the form is closed
     formOpenedWithCourseButton = false;
+
+    window.removeEventListener("resize", setFormHeight);
    
 }
 
@@ -76,14 +113,52 @@ function addSelectToContactForm() {
     if (selectDiv) {
         selectDiv.appendChild(select);
     }
-    }
-    
 
-    // Change the header text to "ЗАЯВИ КУРС" when the second button is clicked
+    if (!document.getElementById('course-type-group')) {
+        const radioDiv = document.createElement('div');
+        radioDiv.id = 'course-type-group';
+        radioDiv.style.marginTop = "15px";
+
+        const radioOptions = [
+            { id: 'group', value: 'Групово', label: 'Групово' },
+            { id: 'individual', value: 'Индивидуално', label: 'Индивидуално' }
+        ];
+
+        radioOptions.forEach(option => {
+            const radioContainer = document.createElement('div');
+            radioContainer.style.display = "flex";
+            radioContainer.style.alignItems = "center";
+            radioContainer.style.gap = "3px";
+
+            const radio = document.createElement('input');
+            radio.type = 'radio';
+            radio.id = option.id;
+            radio.name = 'course-type';
+            radio.value = option.value;
+
+            const label = document.createElement('label');
+            label.htmlFor = option.id;
+            label.textContent = option.label;
+
+            if (option.id === 'group') {
+                radio.checked = true; // Ensure only "Групово" is checked by default
+            }
+
+            radioContainer.appendChild(radio);
+            radioContainer.appendChild(label);
+            radioDiv.appendChild(radioContainer);
+        });
+
+        const radioFormDiv = document.getElementById('form-radio-btn');
+        if (radioFormDiv) {
+            radioFormDiv.appendChild(radioDiv);
+        }
+    }
+
+    // Change the header text and set form height
     header.innerHTML = "ЗАЯВИ КУРС";
-    form.style.height = "590px";
-    // Set the flag to true, indicating the form is opened with the second button
     formOpenedWithCourseButton = true;
+}
 }
 
 document.addEventListener("DOMContentLoaded", function() {

@@ -141,7 +141,26 @@
 #form-select-el-div{
   display: flex;
   flex-direction: row;
-  gap: 3px;
+  gap: 25px;
+}
+
+#course-type-group {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px; 
+}
+
+#course-type-group label {
+  color: black; 
+
+}
+
+@media screen and (max-width: 600px){
+  #form-select-el-div{
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
 }
 
 @media (max-width: 500px) {

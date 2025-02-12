@@ -18,6 +18,7 @@ if (isset($_POST['contact_form_btn'])) {
     $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
     $message = htmlspecialchars(strip_tags(trim($_POST['message'])));
     $courseLevel = htmlspecialchars(strip_tags(trim($_POST['course-level'])));
+    $courseType = htmlspecialchars(strip_tags(trim($_POST['course-type'])));
     $course = htmlspecialchars(strip_tags(trim($_POST['course'])));
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
@@ -55,6 +56,12 @@ if (isset($_POST['contact_form_btn'])) {
                     $courseInfo = "<h4>Level: It is not specified</h4>";
                 }
 
+                if ($courseType) {
+                    $courseTypeInfo = " <h4>Course type: $courseType</h4>";
+                } else {
+                    $courseTypeInfo = "";
+                }
+
 
 
                 $mail->isHTML(true);
@@ -74,8 +81,9 @@ if (isset($_POST['contact_form_btn'])) {
                             <h4>Email: $email</h4>
                             <h4>Course: $course</h4>
                              $courseInfo
-                            <h4>Message: $message</h4>";//check for $couse if it doesn't exist then don't send it;!!!
-                // check also the form name!!!
+                             $courseTypeInfo
+                            <h4>Message: $message</h4>";
+
                 if ($mail->send()) {
                     $_SESSION['status'] = "Благодарим че се свързахте с нас! - Bekolingo team";
                     $_SESSION['status_type'] = "success";

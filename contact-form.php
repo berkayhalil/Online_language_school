@@ -21,6 +21,9 @@ if ($_SERVER['SCRIPT_NAME'] == '/Online_language_school/contact-form.php') {
       <option value="Немски език">Немски език</option>
     </select>
   </div>
+  <div id="form-radio-btn">
+
+  </div>
   <textarea id="form-message" class="contact_inputes" name="message" placeholder="Съобщение"></textarea>
 
   <div class="g-recaptcha" data-sitekey="6Lf82IgqAAAAALJsJgsigTbRciVyxlSsicQrX-7n" data-callback="enableSubmitBtn">
@@ -30,7 +33,7 @@ if ($_SERVER['SCRIPT_NAME'] == '/Online_language_school/contact-form.php') {
   <div id="contact_span_div">
     <span class="fa fa-phone contact_spans"></span><span class="form-contact-spans">089 588 1182</span>
     <span class="fa fa-envelope-o contact_spans"></span> <span
-      class="form-contact-spans">bekolingo.info@gmail.com</span>
+      class="form-contact-spans">info.bekolingo@gmail.com</span>
   </div>
 </form>
 
