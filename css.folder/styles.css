@@ -18,9 +18,10 @@
 }
 
 .btn-flip {
-  position: absolute;
-  right: 13px;
-  top: 193px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: 0;
   color: white;
   line-height: 40px;
@@ -128,7 +129,7 @@
 :root {
   --main-body-light-color: #FFFF;
   --text-color: white;
-  --main-body-dark-color: #083E85; /*#083E85*/
+  --main-body-dark-color: rgb(8, 62, 133); /*#083E85*/
   --main-text-background-color: rgba(8, 62, 133, 0.8);
   --p-text-color: #808080;
   --color-dark: #151C35;

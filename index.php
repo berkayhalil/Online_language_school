@@ -4,6 +4,7 @@
 
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="css.folder/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -30,25 +31,77 @@
     <main>
         <section class="home-section" id="home">
 
-            <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course" data-back="Заяви"
+            <!-- <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course" data-back="Заяви"
                 data-front="Курс"></a>
             <a onclick="openContactForm()" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a>
+-->
 
-            <h2 id="school">
+            <h2 id="school" class="class-for-visibility">
                 Вашата онлайн езикова школа
             </h2>
-            <h1 id="h-home">Учи желания език с нас в реално време с учител - бързо и лесно! Онлайн от всяко място, по
+            <h1 id="h-home" class="class-for-visibility">Учи желания език с нас в реално време с учител - бързо и лесно!
+                Онлайн от всяко място, по
                 всяко време.
                 Нужно е само устройство – лаптоп, таблет или телефон и добра интернет връзка.</h1>
 
 
-            <!--contact Form and overlay -->
             <div id="myOverlay" class="overlay">
 
                 <div class="overlay-content">
                     <?php include 'contact-form.php'; ?>
                 </div>
             </div>
+
+
+            <div id="home-section-swiper-board">
+
+                <div class="swiper-home-section">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div id="first-swiper-div" class="swiper-slide">
+                            <h2 id="school">
+                                Вашата онлайн езикова школа
+                            </h2>
+                            <h1 id="h-home">Учи желания език с нас в реално време с учител - бързо и лесно! Онлайн от
+                                всяко място, по
+                                всяко време.
+                                Нужно е само устройство – лаптоп, таблет или телефон и добра интернет връзка.
+                            </h1>
+                        </div>
+
+                        <div class="swiper-slide">
+                            <div id="swiper-color2"></div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+
+                <div id="main-div-free-consultation">
+                    <div class="free-consultation">
+                        <span id="free-consultation-span">Безплатна онлайн консултация</span><br>
+                        Не сте сигурни на какво ниво са езиковите ви умения? Предлагаме безплатна
+                        проверка с индивидуален онлайн тест, воден от преподавател. Така ще намерим най-подходящия
+                        курс за вас, за да започнете обучението с увереност.
+                    </div>
+                    <div id="require-consultation-btn-div">
+                        <a onclick="openContactForm()" class="btn-flip" data-back="Заяви"
+                            data-front="Безплатна консултация"></a>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+
+
+
+
 
 
         </section>
@@ -106,7 +159,8 @@
 
                 <div class="h4-div-description fadeInBottom">
                     <h4 class="h4-how-we-work-general">1. Определяне на ниво</h4>
-                    <p class="p-how-we-work"> Преди да започнем с обучението, ще проведем безплатен тест за определяне
+                    <p class="p-how-we-work"> Преди да започнем с обучението, ще проведем безплатен тест за
+                        определяне
                         на
                         нивото ви по английски език. Това ще ни помогне да изберем най-подходящата програма за вас,
                         съобразена с текущите ви знания.</p>
@@ -114,7 +168,8 @@
 
                 <div class="h4-div-description fadeInBottom">
                     <h4 class="h4-how-we-work-general">2. Избор на курс</h4>
-                    <p class="p-how-we-work">След като определим нивото ви, ще ви предложим подходящ курс или програма,
+                    <p class="p-how-we-work">След като определим нивото ви, ще ви предложим подходящ курс или
+                        програма,
                         която
                         да отговаря на вашите нужди и цели.</p>
                 </div>
@@ -123,7 +178,8 @@
                     <h4 class="h4-how-we-work-general">3. Обучение</h4>
                     <p class="p-how-we-work">Ще започнете с индивидуални или групови уроци (до 5-8 души),
                         в зависимост от вашето предпочитание, с нашите опитни и мотивирани преподаватели,
-                        които ще се адаптират към вашите нужди и темпо, за да ви помогнат да напредвате бързо и уверено,
+                        които ще се адаптират към вашите нужди и темпо, за да ви помогнат да напредвате бързо и
+                        уверено,
                         постигайки устойчиви резултати, следвайки европейския стандарт за езиково обучение.</p>
                 </div>
 
@@ -142,7 +198,8 @@
                 <button type="button" class="collapsible2">Как да започна
                     курс?</button>
                 <div class="content">
-                    <p class="faq-answer">За да започнете курс, попълнете формата за контакт или се свържете с нас за
+                    <p class="faq-answer">За да започнете курс, попълнете формата за контакт или се свържете с нас
+                        за
                         безплатна консултация.</p>
                 </div>
 
@@ -156,16 +213,19 @@
                 <button type="button" class="collapsible2">Мога ли да получа
                     сертификат след завършване на курс?</button>
                 <div class="content">
-                    <p class="faq-answer">Да, след успешно завършване на курса ще получите сертификат, който потвърждава
+                    <p class="faq-answer">Да, след успешно завършване на курса ще получите сертификат, който
+                        потвърждава
                         нивото на вашето владеене на езика.</p>
                 </div>
 
                 <button type="button" class="collapsible2">Колко време траят курсовете?</button>
                 <div class="content">
-                    <p class="faq-answer">Всеки курс може да бъде адаптиран според вашите нужди, но обикновено трае от 2
+                    <p class="faq-answer">Всеки курс може да бъде адаптиран според вашите нужди, но обикновено трае
+                        от 2
                         до 4 месеца, в зависимост от нивото и интензивността.</p>
                 </div>
-                <button type="button" class="collapsible2">Колко време е продължителността на един учебен час?</button>
+                <button type="button" class="collapsible2">Колко време е продължителността на един учебен
+                    час?</button>
                 <div class="content">
                     <p class="faq-answer">Продължителността на един учебен час е 40 мин.</p>
                 </div>
@@ -216,7 +276,8 @@
                                 <div class="flex">
                                     <div class="comments">
                                         "Обучението надмина всичките ми очаквания. Уроците са добре
-                                        структурирани, а учителите обясняват всичко ясно и достъпно. Видях резултати още
+                                        структурирани, а учителите обясняват всичко ясно и достъпно. Видях резултати
+                                        още
                                         след първия месец!"
                                     </div>
 
@@ -240,7 +301,8 @@
                             <div class="swiper-slide">
                                 <div class="flex">
                                     <div class="comments">
-                                        "Благодаря за професионализма и търпението! Методиката е лесна за разбиране, а
+                                        "Благодаря за професионализма и търпението! Методиката е лесна за разбиране,
+                                        а
                                         уроците
                                         са толкова увлекателни, че времето минава неусетно. Отличен избор за всеки,
                                         който
@@ -313,6 +375,8 @@
     <script src="js.folder/testimonials-section.js"></script>
     <script src="js.folder/collapsible.js"></script>
     <script src="js.folder/navbar.js"></script>
+    <script src="js.folder/swiper-home-section.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </body>
 
 </html>

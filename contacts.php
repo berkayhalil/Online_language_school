@@ -33,7 +33,7 @@
                     се свърже с вас възможно най-скоро.</p>
                 <div class="contact-info">
                     <p><i class="fas fa-phone"></i> 089 588 1182</p>
-                    <p><i class="fas fa-envelope"></i> bekolingo.info@gmail.com</p>
+                    <p><i class="fas fa-envelope"></i> info.bekolingo@gmail.com</p>
                     <p><i class='fas fa-clock'></i> понеделник - петък | 9:00-18:00</p>
                     <p><i class='fas fa-clock'></i> събота - неделя | 10:00-14:00</p>
                 </div>

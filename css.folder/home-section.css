@@ -1,36 +1,28 @@
 
 .home-section {
+  margin-top: 0;
   position: relative;
   display: flex; /* Use Flexbox */
   flex-direction: column; /* Stack items vertically */
   justify-content: center; /* Center items vertically */
   align-items: center; /* Center items horizontally */
   text-align: center; /* Center text within the paragraph */
-  margin-top: -47px;
+  margin-top: 65px;
   scroll-margin-top: 65px;
-  background-image: url("../images/pexels-tima-miroshnichenko2-66714190.jpg"); /* Background image */
+  /*background-image: url("../images/pexels-tima-miroshnichenko2-66714190.jpg"); /* Background image */
   background-size: cover; /* Cover the entire section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-  height: 742px; /* Set a fixed height */
+  min-height: 70vh; /* Set a fixed height */
   color: #ffffff; /* Set default text color to white for visibility */
   border-bottom: 1rem solid var(--main-text-background-color);
 }
 
-.home-section::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(105, 101, 101, 0.5);
-  z-index: 1;
-}
 
 .home-section::after {
+  display: none;
   content: "";
   position: absolute;
   top: 85px;
@@ -45,12 +37,12 @@
   background-color: transparent;
   animation: fadeInUp 2s ease-out forwards;
 }
-
+  
 #school {
   padding-top: 15px;
   position: absolute;
-  top: 117px;
-  left: 166px;
+  top: 7px;
+  left: 168px;
   width: 180px;
   height: 65px;
   z-index: 1;
@@ -59,21 +51,19 @@
   background-color: var(--main-text-background-color);
   border-radius: 50px;
   text-align: center;
-  animation: fadeInUp 2s ease-out forwards;
 }
 
 #h-home {
   position: absolute;
-  margin-bottom: -250px;
+  margin-bottom: -100px;
   padding: 15px;
   text-align: center;
   color: var(--main-body-light-color);
   background-color: var(--main-text-background-color);
   border-radius: 15px;
   max-width: 890px;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 1.5;
-  animation: fadeInUp 1s ease-out forwards;
   font-weight: bold;
   text-align: center;
 }
@@ -117,9 +107,139 @@
 .box-img:hover{
   transform: scale(1.1);
 }
+.class-for-visibility{
+display: none;
+}
 
+.free-consultation{
+  text-align: left;
+  color: var(--main-body-dark-color);
+  font-weight: lighter;
+  width: 50%;
+  color: var(--text-color);
+  text-align: justify;
+  font-size: 17px;
+  line-height: 1.2;
+}
 
+#free-consultation-span{
+font-size: 25px;
+font-weight: bold;
+color:  var(--text-color);
+padding-bottom: 15px;
+}
 
+#main-div-free-consultation{
+  position:absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background: linear-gradient(90deg, rgb(8, 62, 133), rgba(0, 94, 128, 0.93));
+  padding-top:10px;
+  padding-bottom: 10px;
+  gap: 20px;
+  z-index: 1;
+}
+
+#require-consultation-btn-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#first-swiper-div #school{
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+#first-swiper-div #h-home{
+  opacity:0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+/*-----------------------SWIPER-----------------------*/
+
+.swiper-home-section{
+  width: 100%;
+  max-width: 2250px;
+}
+
+#swiper-color{
+  background-color: blue;
+  height: 100px;
+  width: 100px;
+}
+#swiper-color2{
+  background-color: red;
+  height: 100px;
+  width: 100px;
+}
+#home-section-swiper-board .swiper-slide{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 91vh;
+  padding:0;
+  margin: 0;
+}
+
+#home-section-swiper-board{
+  overflow: hidden;
+  display: flex;
+  margin-top: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: aliceblue;
+  width: 100% ;
+}
+
+#first-swiper-div {
+  position: relative;
+  background-image: url("../images/pexels-tima-miroshnichenko2-66714198.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top; /* Adjusted */
+}
+
+#first-swiper-div::after{
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 40px;
+  width: 130px;
+  height: 130px;
+  background-image: url("../images/long-black-curved-arrows2-set-260nw-2482787799.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+  background-color: transparent;
+  opacity: 0;
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+}
+
+.swiper-home-section .swiper-pagination{
+  margin-top:-50px;
+  z-index: 1;
+}
+
+.swiper-home-section .swiper-button-next, .swiper-button-prev {
+  color: aliceblue; 
+}
+
+#curved-arrow{
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 130px;
+}
+/*-----------------------SWIPER-----------------------*/
 
 @media (hover: none) {
   .box-img:hover {
@@ -135,6 +255,9 @@
 
 
 @media screen and (max-width: 800px) {
+  .home-section::after{
+    display: block;
+  }
   .home-section {
     display: flex;
     justify-content: center;
@@ -143,6 +266,9 @@
     background-image: url("../images/pexels-tima-miroshnichenko-66707978 (1).jpg");
     min-height: 846px;
     background-size: cover;
+  }
+  .home-section .board{
+    display: none;
   }
   .box{
     width: 100%;
@@ -173,6 +299,7 @@
     top: -65px;
     font-size: 20px;
     width: 80%;
+    animation: fadeInUp 1s ease-out forwards;
   }
   #school {
     margin-top: -5px;
@@ -189,6 +316,14 @@
     font-size: 18px;
     font-weight: bolder;
     text-align: center;
+    animation: fadeInUp 2s ease-out forwards;
+  }
+
+  #home-section-swiper-board{
+    display: none;
+  }
+  .class-for-visibility{
+    display: block;
   }
 }
 
@@ -203,6 +338,11 @@
     opacity: 1;
   }
 }
+
+
+
+
+
 
 
 

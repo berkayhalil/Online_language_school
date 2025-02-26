@@ -8,9 +8,10 @@ $speed: 0.5s;
 }
 
 .btn-flip {
-  position: absolute;
-  right: 13px;
-  top: 193px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   outline: 0;
   color: #ffff;
   line-height: 40px;

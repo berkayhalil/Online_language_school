@@ -34,7 +34,7 @@
                     </div>
 
                     <div class="div-about-us-description">
-                        <p class="p-about-us-description">В езикова школа Bekolingo вярваме, че изучаването на английски
+                        <p class="p-about-us-description">В езикова школа Bekolingo вярваме, че изучаването на
                             език
                             може да бъде лесно,
                             приятно и ефективно. Нашата мисия е да ви предоставим качествено обучение, съобразено с
