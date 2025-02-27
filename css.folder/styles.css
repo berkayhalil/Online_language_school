@@ -12,9 +12,9 @@
 @import 'prices.css';
 @import 'english-courses.css';
 @import 'faq-section.css';
-.btn-flip.course {
-  right: 13px;
-  top: 143px;
+.course {
+  margin-left: 20px;
+  width: 100px;
 }
 
 .btn-flip {

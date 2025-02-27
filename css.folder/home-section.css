@@ -140,7 +140,7 @@ padding-bottom: 15px;
   padding-top:10px;
   padding-bottom: 10px;
   gap: 20px;
-  z-index: 1;
+  z-index: 3;
 }
 
 #require-consultation-btn-div{
@@ -160,7 +160,7 @@ padding-bottom: 15px;
   animation-delay: 0.5s;
 }
 
-/*-----------------------SWIPER-----------------------*/
+/*-----------------------SWIPER HOME SECTION-----------------------*/
 
 .swiper-home-section{
   width: 100%;
@@ -225,8 +225,23 @@ padding-bottom: 15px;
 }
 
 .swiper-home-section .swiper-pagination{
-  margin-top:-50px;
-  z-index: 1;
+  position: absolute;
+  bottom: 115px; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.swiper-home-section .swiper-pagination-bullet{
+  background-color: rgb(18, 77, 128); 
+  opacity: 0.6;
+}
+
+.swiper-home-section .swiper-pagination-bullet-active{
+  background-color: #0037ff; 
+  opacity: 1; 
+  height: 9px;
+  width: 9px;
 }
 
 .swiper-home-section .swiper-button-next, .swiper-button-prev {
@@ -239,7 +254,7 @@ padding-bottom: 15px;
   left: 50px;
   width: 130px;
 }
-/*-----------------------SWIPER-----------------------*/
+/*-----------------------SWIPER HOME SECTION-----------------------*/
 
 @media (hover: none) {
   .box-img:hover {

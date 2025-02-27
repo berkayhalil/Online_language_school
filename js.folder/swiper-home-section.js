@@ -1,10 +1,10 @@
 const swiper1 = new Swiper('.swiper-home-section', {
   loop: true,
   /*autoplay: {
-    delay:  8000,
+    delay:  9000,
     disableOnInteraction: false,
   },
-  speed: 1000,*/
+  speed: 800,*/
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
