@@ -13,8 +13,22 @@
 @import 'english-courses.css';
 @import 'faq-section.css';
 .course {
-  margin-left: 20px;
+  opacity: 0;
+}
+
+.swiper-slide-active .course {
+  animation: fadeInUp 1s ease-out forwards;
+  animation-delay: 0.5s;
+  opacity: 0;
+  cursor: pointer;
+  display: flex;
   width: 100px;
+  z-index: 2;
+  display: flex;
+}
+
+.dontDisplay {
+  display: none !important;
 }
 
 .btn-flip {
@@ -32,6 +46,7 @@
   text-transform: uppercase;
   border-radius: 5px;
   font-weight: bold;
+  z-index: 1;
 }
 .btn-flip:hover:after {
   opacity: 1;
@@ -72,27 +87,13 @@
 }
 
 @media screen and (max-width: 800px) {
-  .btn-flip {
-    position: absolute;
-    right: 10px;
-    top: 120px;
-    outline: 0;
-    color: #fff;
-    line-height: 40px;
-    text-align: center;
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-  }
   .btn-flip:hover:after {
     opacity: 1;
-    transform: translateY(0) rotateX(0);
+    transform: translateY(0);
   }
   .btn-flip:hover:before {
     opacity: 0;
-    transform: translateY(50%) rotateX(90deg);
+    transform: translateY(50%);
   }
   .btn-flip:after {
     top: 0;
@@ -105,7 +106,7 @@
     position: absolute;
     background: #fda403;
     content: attr(data-back);
-    transform: translateY(-50%) rotateX(90deg);
+    transform: translateY(-50%);
   }
   .btn-flip:before {
     top: 0;
@@ -119,11 +120,14 @@
     position: relative;
     background: #fda403;
     content: attr(data-front);
-    transform: translateY(0) rotateX(0);
+    transform: translateY(0);
   }
-  .btn-flip.course {
-    right: 13px;
-    top: 75px;
+  .course {
+    display: flex;
+    opacity: 100%;
+  }
+  .dontDisplay {
+    display: block !important;
   }
 }
 :root {

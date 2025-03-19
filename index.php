@@ -31,18 +31,29 @@
     <main>
         <section class="home-section" id="home">
 
-            <!-- <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course" data-back="Заяви"
-                data-front="Курс"></a>
-            <a onclick="openContactForm()" class="btn-flip" data-back="Заяви" data-front="Безплатна консултация"></a>
--->
+            <div id="home-section-div">
+                <h2 id="school" class="dontDisplay">
+                    Вашата онлайн езикова школа
+                </h2>
+                <h1 id="h-home" class="dontDisplay">Учи желания език с нас в реално време с учител - бързо и лесно!
+                    Онлайн от всяко място, по всяко време.Нужно е само устройство – лаптоп, таблет или телефон и добра
+                    интернет връзка.
+                </h1>
+                <div id="btns-home-section">
 
-            <h2 id="school" class="class-for-visibility">
-                Вашата онлайн езикова школа
-            </h2>
-            <h1 id="h-home" class="class-for-visibility">Учи желания език с нас в реално време с учител - бързо и лесно!
-                Онлайн от всяко място, по всяко време.Нужно е само устройство – лаптоп, таблет или телефон и добра
-                интернет връзка.
-            </h1>
+                    <div id="gif-and-btn-div">
+                        <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course "
+                            data-back="Заяви" data-front="Курс"></a>
+                    </div>
+
+                    <div id="gif-and-btn-div2">
+                        <a onclick="openContactForm()" class="btn-flip dontDisplay" data-back="Заяви"
+                            data-front="Безплатна консултация"></a>
+                        <img id="row-gif" src="images\Arrow Type Sticker (1).gif" alt="Animated GIF">
+                    </div>
+
+                </div>
+            </div>
 
 
             <div id="myOverlay" class="overlay">
@@ -63,17 +74,34 @@
                             <h2 id="school">
                                 Вашата онлайн езикова школа
                             </h2>
-                            <h1 id="h-home">Учи желания език с нас в реално време с учител - бързо и лесно! Онлайн от
-                                всяко място, по
-                                всяко време.
-                                Нужно е само устройство – лаптоп, таблет или телефон и добра интернет връзка.
-                                <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course"
-                                    data-back="Заяви" data-front="Курс"></a>
+                            <h1 class="h-home2">Учeте желания език с нас в реално време с учител - лесно, удобно и
+                                ефективно! ОНЛАЙН от всяко място, по всяко време.
+                                Нужно е само устройство – лаптоп, таблет или телефон и стабилна интернет връзка.
                             </h1>
+                            <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course"
+                                data-back="Заяви" data-front="Курс"></a>
                         </div>
 
-                        <div class="swiper-slide">
-                            <div id="swiper-color2"></div>
+                        <div id="second-swiper-div" class="swiper-slide">
+                            <h2 class="h-home2">
+                                Нашите квалифицирани преподаватели ще ти помогнат да овладееш
+                                езика уверено и ефективно. Независимо дали си начинаещ или искаш
+                                да надградиш знанията си, ние ще ти осигурим подкрепа и мотивация
+                                на всяка стъпка от пътя!
+                            </h2>
+                            <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course"
+                                data-back="Заяви" data-front="Курс"></a>
+                        </div>
+
+                        <div id="third-swiper-div" class="swiper-slide">
+                            <h2 class="h-home2">
+                                Персонализирано обучение, съобразено с твоите нужди<br>
+                                Практически насочени уроци с опитни преподаватели <br>
+                                Гъвкав график, който се адаптира към теб <br>
+                                Онлайн обучение с лесен достъп отвсякъде <br>
+                            </h2>
+                            <a onclick="addSelectToContactForm(event); openContactForm();" class="btn-flip course"
+                                data-back="Заяви" data-front="Курс"></a>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -90,9 +118,15 @@
                         проверка с индивидуален онлайн тест, воден от преподавател. Така ще намерим най-подходящия
                         курс за вас, за да започнете обучението с увереност.
                     </div>
-                    <div id="require-consultation-btn-div">
-                        <a onclick="openContactForm()" class="btn-flip" data-back="Заяви"
-                            data-front="Безплатна консултация"></a>
+
+                    <div id="arrow-and-btn-div">
+                        <div id="require-consultation-btn-div">
+                            <a onclick="openContactForm()" class="btn-flip" data-back="Заяви"
+                                data-front="Безплатна консултация"></a>
+                        </div>
+                        <div>
+                            <img id="row-gif2" src="images\Look Click Sticker (1).gif" alt="Animated GIF">
+                        </div>
                     </div>
                 </div>
 
