@@ -6,12 +6,13 @@
         content="Езикова школа Bekolingo предлага онлайн уроци по английски език. Започнете лесно и уверено с индивидуални и групови уроци.">
     <meta name="keywords" content="уроци по английски, онлайн обучение, езикова школа, Bekolingo">
     <meta name="author" content="Bekolingo">
+    <base href="/Online_language_school/">
     <link rel="stylesheet" href="css.folder\styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>За нас</title>
 </head>
 
 <body id="body-for-us">
@@ -126,11 +127,11 @@
 
                     <div class="div-about-us-description">
                         <ul class="for-us-ul">
-                            <li>Гъвкав график, който позволява да учите по всяко време и от всяко място.</li>
-                            <li>Достъп до висококачествени материали и ресурси.</li>
-                            <li>Индивидуален подход, който гарантира бърз напредък.</li>
-                            <li>Преподаватели с богат опит и знания.</li>
-                            <li>Подобряване на английския език в кратки срокове.</li>
+                            <li>Гъвкав график – учете когато и където ви е удобно.</li>
+                            <li>Персонализиран подход за максимално бърз напредък.</li>
+                            <li>Опитни преподаватели, които ще ви насочват на всяка стъпка.</li>
+                            <li>Усъвършенствайте уменията си ефективно и в кратки срокове.</li>
+                            <li>Сертификат за успешно завършен курс, който удостоверява знанията ви.</li>
                         </ul>
                     </div>
                 </div>

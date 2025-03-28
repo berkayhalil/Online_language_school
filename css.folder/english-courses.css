@@ -1,4 +1,4 @@
-.english-courses-section {
+.courses-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,11 +7,11 @@
     margin-top: 15px;
   }
 
-  .en-courses-div{
+  .courses-div{
     width: 70%;
   }
 
-  .en-courses-priceTable-div{
+  .courses-priceTable-div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +20,7 @@
     margin-top: -25px;
   }
 
-  .en-courses-p{
+  .courses-p{
     font-weight: bold;
     line-height: 20px;
     text-align:justify;
@@ -108,7 +108,7 @@
     margin-left:-5px;
   }
 
-  #english-courses-cards-section{
+  .courses-cards-section{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -116,7 +116,7 @@
     padding:20px;
   }
 
-  #main-div-english-courses-cards{
+  #main-div-courses-cards{
     display: flex;
     flex-direction: row;
     gap:50px;
@@ -127,7 +127,7 @@
     gap: 80px;
   }
 
-  .en-courses-card{
+  .courses-card{
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -152,7 +152,7 @@
     background-color: var(--main-body-dark-color);
   }
 
-  .en-courses-card:hover{
+  .courses-card:hover{
     transform: scale(1.03);
   }
 
@@ -194,7 +194,7 @@
     content: '»';
     position: absolute;
     opacity: 0;  
-    top: 11px;
+    top: 13px;
     right: 20px;
     transition: 0.5s;
   }
@@ -244,10 +244,10 @@
   
 
   @media screen and (max-width: 800px) {
-    .en-courses-div{
+    .courses-div{
         width: 100%;
       }
-      #main-div-english-courses-cards{
+      #main-div-courses-cards{
         width: 100%;
       }
       #body-english-courses #form{
@@ -259,16 +259,16 @@
     #body-english-courses .price-h2-div{
       width: 100%;
     }
-    .en-courses-priceTable-div{
+    .courses-priceTable-div{
       width: 100%;
     }
       
   }
   @media screen and (max-width: 600px){
-    .en-courses-card{
+    .courses-card{
       width: 100%;
     }
-    #main-div-english-courses-cards{
+    #main-div-courses-cards{
       gap:50px;
     }
   }
@@ -286,9 +286,9 @@
     }
     .enroll-btn:after{
       opacity: 1;
-      right: 19%;
+      right: 25%;
     }
-    .en-courses-card:hover {
+    .courses-card:hover {
       transform: none; 
     }
   }

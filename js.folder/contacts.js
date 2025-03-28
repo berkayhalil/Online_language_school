@@ -11,7 +11,7 @@ if (heading) {
 }
 
 // Check if the current page is contacts.php
-if (window.location.pathname.endsWith("contacts.php")) {
+if (window.location.pathname.endsWith("contacts")) {
   const contactDiv = document.getElementById("contact_span_div");
   if (contactDiv) {
     contactDiv.remove(); // Remove the entire div

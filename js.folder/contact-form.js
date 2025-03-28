@@ -162,7 +162,7 @@ function addSelectToContactForm() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    if (window.location.pathname.includes("english-courses.php")) {
+    if (window.location.pathname.includes("english-courses")) {
         formOpenedWithCourseButton = true; // Set flag to true
         addSelectToContactForm(); // Add the course dropdown automatically
     }

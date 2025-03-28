@@ -4,12 +4,13 @@
 
 <head>
     <meta name="format-detection" content="telephone=no">
+    <base href="/Online_language_school/">
     <link rel="stylesheet" href="css.folder\styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts</title>
+    <title>Курсове по английски</title>
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 
@@ -17,14 +18,14 @@
     <header>
         <?php include 'navbar.php' ?>
         <div class="div-top-h1">
-            <h1 class="h1-top">Курсове по английски- онлайн</h1>
+            <h1 class="h1-top">Онлайн курсове по английски език</h1>
         </div>
     </header>
 
     <main>
-        <section class="english-courses-section">
-            <div class="en-courses-div">
-                <p class="en-courses-p">
+        <section class="courses-section">
+            <div class="courses-div">
+                <p class="courses-p">
                     Ако искате да научите или да усъвършенствате английския си език, УЧЕБЕН ЦЕНТЪР „БЕКОЛИНГО“ е вашето
                     място!
                     Предлагаме качествено онлайн обучение, което се адаптира към нуждите на всеки ученик. С повече от 10
@@ -37,7 +38,8 @@
 
                 <ul class="ul-general">
                     <li>
-                        Онлайн групови курсове, които ще ви помогнат да подобрите комуникативните си умения
+                        Онлайн групови курсове с преподавател, които ще ви помогнат да подобрите комуникативните си
+                        умения
                     </li>
                     <li>
                         Индивидуални уроци с преподавател, който се фокусира върху вашите нужди и прогрес
@@ -52,27 +54,27 @@
                     </li>
 
                     <li>
-                        Подготовка за международни сертификати по английски език (например IELTS, TOEFL)
+                        Подготовка за международни сертификати по английски език (IELTS, TOEFL)
                     </li>
 
                     <li>
                         Разговорен курс по английски, който ще ви помогне да говорите свободно и уверено
                     </li>
                 </ul>
-                <p class="en-courses-p">Независимо дали искате да научите основите на езика или да развиете
+                <p class="courses-p">Независимо дали искате да научите основите на езика или да развиете
                     напреднали умения, нашето онлайн обучение е идеалният избор за вас. Присъединете се
                     към нас и развийте своите умения по английски език в удобна и гъвкава среда!</p>
                 <img id="england-flag-img" src="images/pexels-photo-21070602.jpg">
             </div>
         </section>
 
-        <section class="english-courses-section">
-            <div class="en-courses-div">
+        <section class="courses-section">
+            <div class="courses-div">
 
                 <button type="button" class="collapsible"><span class="fa fa-group icons"></span>Групово онлайн
                     обучение</button>
                 <div class="content">
-                    <p>Курсовете по английски в Bekolingo са съобразени с Общата Европейска
+                    <p>Езиковите курсове в Bekolingo са съобразени с Общата Европейска
                         Езикова Рамка (ОЕЕР) и се водят по учебната система на <span class="span-bold">Oxford University
                             Press, English File 3rd издание</span>. Тази система е много популярна сред нашите
                         ученици заради леснотата и ефективността на материала.<br><br>
@@ -106,9 +108,9 @@
             </div>
         </section>
 
-        <section id="english-courses-cards-section">
-            <div id="main-div-english-courses-cards">
-                <div class="en-courses-card fadeInLeft">
+        <section class="courses-cards-section">
+            <div id="main-div-courses-cards">
+                <div class="courses-card fadeInLeft">
                     <span class="card-headings">Пакет 1</span>
                     <ul class="pricing-ul">
                         <li>
@@ -127,12 +129,12 @@
                             Електронни учебници
                         </li>
                         <li>
-                            Сертификат
+                            Избор на ниво (A1 – C1)
                         </li>
                     </ul>
                     <button class="enroll-btn"><span>Заяви</span></button>
                 </div>
-                <div class="en-courses-card fadeInBottom">
+                <div class="courses-card fadeInBottom">
                     <span class="card-headings">Пакет 2</span>
                     <ul class="pricing-ul">
                         <li>
@@ -151,12 +153,12 @@
                             Електронни учебници
                         </li>
                         <li>
-                            Сертификат
+                            Избор на ниво (A1 – C1)
                         </li>
                     </ul>
                     <button class="enroll-btn"><span>Заяви</span></button>
                 </div>
-                <div class="en-courses-card fadeInRight">
+                <div class="courses-card fadeInRight">
                     <span class="card-headings">Пакет 3</span>
                     <ul class="pricing-ul">
                         <li>
@@ -175,7 +177,7 @@
                             Електронни учебници
                         </li>
                         <li>
-                            Сертификат
+                            Избор на ниво (A1 – C1)
                         </li>
                     </ul>
                     <button class="enroll-btn"><span>Заяви</span></button>
@@ -183,8 +185,8 @@
             </div>
         </section>
 
-        <section id="en-courses-price-table-section" class="english-courses-section">
-            <div class="en-courses-priceTable-div">
+        <section id="en-courses-price-table-section" class="courses-section">
+            <div class="courses-priceTable-div">
                 <div class="price-h2-div">
                     <h2 class="price-h2">Цени за индивидуално онлайн обучение:</h2>
                 </div>
@@ -235,7 +237,7 @@
             </div>
         </section>
 
-        <section class="english-courses-section">
+        <section class="courses-section">
             <?php include 'contact-form.php' ?>
         </section>
 
@@ -243,13 +245,9 @@
 
     <?php include 'footer.php' ?>
 
-    <script src="js.folder/navbar.js"></script>
-    <script src="js.folder/collapsible.js"></script>
-    <script src="js.folder/fadeIn.js"></script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById("main-div-english-courses-cards").addEventListener("click", function (event) {
+            document.getElementById("main-div-courses-cards").addEventListener("click", function (event) {
                 if (event.target.closest(".enroll-btn")) {
                     let form = document.getElementById("form");
                     let offset = 100; // Adjust if needed
@@ -260,6 +258,10 @@
             });
         });
     </script>
+
+    <script src="js.folder/navbar.js"></script>
+    <script src="js.folder/collapsible.js"></script>
+    <script src="js.folder/fadeIn.js"></script>
 </body>
 
 </html>

@@ -31,6 +31,11 @@
   font-weight: bold;
 }
 
+.contacts-container #contact_span_div {
+ display: none;
+}
+
+
 .main-content-contacts #form {
   width: 400px;
   height: 550px;
