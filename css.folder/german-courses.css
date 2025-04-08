@@ -1,0 +1,37 @@
+#body-german-courses .price-h2-div{
+    width: 100%;
+  }
+  #body-german-courses .main-div-table-prices{
+    width: 100%;
+  }
+
+  #body-german-courses #form{
+    margin-top: auto;
+   width: 70%;
+   height: auto;
+  }
+
+  #body-german-courses #form .closebtn{
+    display: none;
+  }
+
+  #body-german-courses #form #contact_span_div{
+   width: 330px;
+  }
+ 
+
+  #body-german-courses #form #contact_btn{
+    margin-bottom: 20px;
+  }
+  #body-english-courses #form{
+    margin-bottom: 40px;
+  }
+  #body-german-courses #form #contact_us{
+    text-align: center;
+  }
+
+  @media screen and (max-width: 800px) {
+      #body-german-courses #form{
+       width: 100%;
+      }
+  }

@@ -15,7 +15,7 @@
 </head>
 
 
-<body>
+<body id="body-german-courses">
     <header>
         <?php include 'navbar.php' ?>
         <div class="div-top-h1">
@@ -80,10 +80,195 @@
             </div>
         </section>
 
+        <section class="courses-section">
+            <div class="courses-div">
+                <button type="button" class="collapsible"><span class="fa fa-group icons"></span>Групово онлайн
+                    обучение</button>
+                <div class="content">
+                    <p>Езиковите курсове по немски език в „Bekolingo“ са съобразени с <span class="span-bold">Общата
+                            Европейска Езикова Рамка (ОЕЕР)</span> и се водят по учебната система <span
+                            class="span-bold">Menschen</span>, позната с добре структурираното си съдържание и
+                        практическата насоченост,
+                        което я прави изключително ефективна за по-лесно и приятно учене.<br><br>
+                        Нашите онлайн уроци по Немски език са организирани в нива: <span class="span-bold">А1.1, А1.2,
+                            А2.1, А2.2,
+                            В1.1, В1.2, В2.1, B2.2</span>, като всяко ниво включва <span class="span-bold">60 учебни
+                            часа (по 40 минути
+                            всеки)</span>.<br><br>
+                        Групите са с <span class="span-bold"> максимален брой от 6-8 ученици</span>, за да осигурим
+                        персонализирано внимание на всеки.
+                    </p>
+                </div>
+                <button type="button" class="collapsible"><span class="fa fa-user icons"></span>Индивидуално онлайн
+                    обучение</button>
+                <div class="content">
+                    <p>Езиков център „Bekolingo“ предлага индивидуално обучение с три
+                        различни пакета от учебни
+                        часове (един учебен час е с продължителност 40 минути):
+                    <ul class="en-courses-ul">
+                        <li>10 учебни часа – курсът трябва да бъде завършен в рамките на 1 месец.</li>
+                        <li>24 учебни часа – обучението може да продължи до 3 месеца.</li>
+                        <li>48 учебни часа – срокът за завършване е до 6 месеца.</li>
+                    </ul>
+
+                    <span class="span-bold">График на уроците:</span>
+                    Индивидуалното обучение започва в рамките на десет работни дни след записване. Учениците сами
+                    определят удобните за тях дни и часове за провеждане на онлайн занятията в езиков център
+                    „Bekolingo“.
+                    </p>
+                </div>
+        </section>
+
+        <section class="courses-cards-section">
+            <div id="main-div-courses-cards">
+                <div class="courses-card fadeInLeft">
+                    <span class="card-headings">Пакет 1</span>
+                    <ul class="pricing-ul">
+                        <li>
+                            10 уч.ч. с преподавател
+                        </li>
+                        <li>
+                            Уроци в реално време
+                        </li>
+                        <li>
+                            Индивидуално обучение
+                        </li>
+                        <li>
+                            Виртуална класна стая
+                        </li>
+                        <li>
+                            Електронни учебници
+                        </li>
+                        <li>
+                            Избор на ниво (A1 – B2)
+                        </li>
+                    </ul>
+                    <button class="enroll-btn"><span>Заяви</span></button>
+                </div>
+                <div class="courses-card fadeInBottom">
+                    <span class="card-headings">Пакет 2</span>
+                    <ul class="pricing-ul">
+                        <li>
+                            24 уч.ч. с преподавател
+                        </li>
+                        <li>
+                            Уроци в реално време
+                        </li>
+                        <li>
+                            Индивидуално обучение
+                        </li>
+                        <li>
+                            Виртуална класна стая
+                        </li>
+                        <li>
+                            Електронни учебници
+                        </li>
+                        <li>
+                            Избор на ниво (A1 – B2)
+                        </li>
+                    </ul>
+                    <button class="enroll-btn"><span>Заяви</span></button>
+                </div>
+                <div class="courses-card fadeInRight">
+                    <span class="card-headings">Пакет 3</span>
+                    <ul class="pricing-ul">
+                        <li>
+                            48 уч.ч. с преподавател
+                        </li>
+                        <li>
+                            Уроци в реално време
+                        </li>
+                        <li>
+                            Индивидуално обучение
+                        </li>
+                        <li>
+                            Виртуална класна стая
+                        </li>
+                        <li>
+                            Електронни учебници
+                        </li>
+                        <li>
+                            Избор на ниво (A1 – B2)
+                        </li>
+                    </ul>
+                    <button class="enroll-btn"><span>Заяви</span></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="en-courses-price-table-section" class="courses-section">
+            <div class="courses-priceTable-div">
+                <div class="price-h2-div">
+                    <h2 class="price-h2">Цени за индивидуално онлайн обучение:</h2>
+                </div>
+                <div class="main-div-table-prices">
+                    <table class="price-table-general">
+                        <thead>
+                            <tr>
+                                <th>Ниво</th>
+                                <th>10 уч.ч.</th>
+                                <th>24 уч.ч.</th>
+                                <th>48 уч.ч.</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-label="Ниво"><span class="course-span">A1</span></td>
+                                <td data-label="10 уч.ч">280 лв.</td>
+                                <td data-label="24 уч.ч">600 лв.</td>
+                                <td data-label="48 уч.ч">1140 лв.</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Ниво"><span class="course-span">A2</span></td>
+                                <td data-label="10 уч.ч">280 лв.</td>
+                                <td data-label="24 уч.ч">600 лв.</td>
+                                <td data-label="48 уч.ч">1140 лв.</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Ниво"><span class="course-span">B1</span></td>
+                                <td data-label="10 уч.ч">340 лв.</td>
+                                <td data-label="24 уч.ч">720 лв.</td>
+                                <td data-label="48 уч.ч">1360 лв.</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Ниво"><span class="course-span">B2</span></td>
+                                <td data-label="10 уч.ч">340 лв.</td>
+                                <td data-label="24 уч.ч">720 лв.</td>
+                                <td data-label="48 уч.ч">1360 лв.</td>
+                            </tr>
+                            <tr>
+                                <td data-label="Ниво"><span class="course-span">C1</span></td>
+                                <td data-label="10 уч.ч">380 лв.</td>
+                                <td data-label="24 уч.ч">840 лв.</td>
+                                <td data-label="48 уч.ч">1600 лв.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section class="courses-section">
+            <?php include 'contact-form.php' ?>
+        </section>
+
     </main>
     <script src="js.folder/navbar.js"></script>
     <script src="js.folder/collapsible.js"></script>
     <script src="js.folder/fadeIn.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("main-div-courses-cards").addEventListener("click", function (event) {
+                if (event.target.closest(".enroll-btn")) {
+                    let form = document.getElementById("form");
+                    let offset = 100; // Adjust if needed
+                    let formPosition = form.getBoundingClientRect().top + window.scrollY - offset;
+
+                    window.scrollTo({ top: formPosition, behavior: "smooth" });
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

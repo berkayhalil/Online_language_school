@@ -191,7 +191,7 @@
                     <h2 class="price-h2">Цени за индивидуално онлайн обучение:</h2>
                 </div>
                 <div class="main-div-table-prices">
-                    <table id="price-table-individual" class="price-table-general">
+                    <table class="price-table-general">
                         <thead>
                             <tr>
                                 <th>Ниво</th>
@@ -202,31 +202,31 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td data-label="Ниво"><span id="course-span">A1</span></td>
+                                <td data-label="Ниво"><span class="course-span">A1</span></td>
                                 <td data-label="10 уч.ч">280 лв.</td>
                                 <td data-label="24 уч.ч">600 лв.</td>
                                 <td data-label="48 уч.ч">1140 лв.</td>
                             </tr>
                             <tr>
-                                <td data-label="Ниво"><span id="course-span">A2</span></td>
+                                <td data-label="Ниво"><span class="course-span">A2</span></td>
                                 <td data-label="10 уч.ч">280 лв.</td>
                                 <td data-label="24 уч.ч">600 лв.</td>
                                 <td data-label="48 уч.ч">1140 лв.</td>
                             </tr>
                             <tr>
-                                <td data-label="Ниво"><span id="course-span">B1</span></td>
+                                <td data-label="Ниво"><span class="course-span">B1</span></td>
                                 <td data-label="10 уч.ч">340 лв.</td>
                                 <td data-label="24 уч.ч">720 лв.</td>
                                 <td data-label="48 уч.ч">1360 лв.</td>
                             </tr>
                             <tr>
-                                <td data-label="Ниво"><span id="course-span">B2</span></td>
+                                <td data-label="Ниво"><span class="course-span">B2</span></td>
                                 <td data-label="10 уч.ч">340 лв.</td>
                                 <td data-label="24 уч.ч">720 лв.</td>
                                 <td data-label="48 уч.ч">1360 лв.</td>
                             </tr>
                             <tr>
-                                <td data-label="Ниво"><span id="course-span">C1</span></td>
+                                <td data-label="Ниво"><span class="course-span">C1</span></td>
                                 <td data-label="10 уч.ч">380 лв.</td>
                                 <td data-label="24 уч.ч">840 лв.</td>
                                 <td data-label="48 уч.ч">1600 лв.</td>

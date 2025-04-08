@@ -167,3 +167,10 @@ document.addEventListener("DOMContentLoaded", function() {
         addSelectToContactForm(); // Add the course dropdown automatically
     }
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    if (window.location.pathname.includes("german-courses")) {
+        formOpenedWithCourseButton = true; // Set flag to true
+        addSelectToContactForm(); // Add the course dropdown automatically
+    }
+});

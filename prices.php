@@ -38,61 +38,61 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">A1/1</span></td>
+                            <td data-label="Курс"><span class="course-span">A1/1</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">330 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">A1/2</span></td>
+                            <td data-label="Курс"><span class="course-span">A1/2</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">330 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">A2/1</span></td>
+                            <td data-label="Курс"><span class="course-span">A2/1</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">370 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">A2/2</span></td>
+                            <td data-label="Курс"><span class="course-span">A2/2</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">370 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">B1/1</span></td>
+                            <td data-label="Курс"><span class="course-span">B1/1</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">430 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">B1/2</span></td>
+                            <td data-label="Курс"><span class="course-span">B1/2</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">430 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">B2/1</span></td>
+                            <td data-label="Курс"><span class="course-span">B2/1</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">450 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">B2/2</span></td>
+                            <td data-label="Курс"><span class="course-span">B2/2</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">450 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">C1/1</span></td>
+                            <td data-label="Курс"><span class="course-span">C1/1</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">470 лв</td>
                         </tr>
                         <tr>
-                            <td data-label="Курс"><span id="course-span">C1/2</span></td>
+                            <td data-label="Курс"><span class="course-span">C1/2</span></td>
                             <td data-label="Продължителност">2 Месеца</td>
                             <td data-label="Часове">60 уч.часа</td>
                             <td data-label="Цена">470 лв</td>
@@ -121,31 +121,31 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td data-label="Ниво"><span id="course-span">A1</span></td>
+                            <td data-label="Ниво"><span class="course-span">A1</span></td>
                             <td data-label="10 уч.ч">280 лв.</td>
                             <td data-label="24 уч.ч">600 лв.</td>
                             <td data-label="48 уч.ч">1140 лв.</td>
                         </tr>
                         <tr>
-                            <td data-label="Ниво"><span id="course-span">A2</span></td>
+                            <td data-label="Ниво"><span class="course-span">A2</span></td>
                             <td data-label="10 уч.ч">280 лв.</td>
                             <td data-label="24 уч.ч">600 лв.</td>
                             <td data-label="48 уч.ч">1140 лв.</td>
                         </tr>
                         <tr>
-                            <td data-label="Ниво"><span id="course-span">B1</span></td>
+                            <td data-label="Ниво"><span class="course-span">B1</span></td>
                             <td data-label="10 уч.ч">340 лв.</td>
                             <td data-label="24 уч.ч">720 лв.</td>
                             <td data-label="48 уч.ч">1360 лв.</td>
                         </tr>
                         <tr>
-                            <td data-label="Ниво"><span id="course-span">B2</span></td>
+                            <td data-label="Ниво"><span class="course-span">B2</span></td>
                             <td data-label="10 уч.ч">340 лв.</td>
                             <td data-label="24 уч.ч">720 лв.</td>
                             <td data-label="48 уч.ч">1360 лв.</td>
                         </tr>
                         <tr>
-                            <td data-label="Ниво"><span id="course-span">C1</span></td>
+                            <td data-label="Ниво"><span class="course-span">C1</span></td>
                             <td data-label="10 уч.ч">380 лв.</td>
                             <td data-label="24 уч.ч">840 лв.</td>
                             <td data-label="48 уч.ч">1600 лв.</td>

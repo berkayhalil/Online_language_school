@@ -12,6 +12,7 @@
 @import 'prices.css';
 @import 'english-courses.css';
 @import 'faq-section.css';
+@import 'german-courses.css';
 .course {
   opacity: 0;
 }

@@ -234,7 +234,6 @@
   #body-english-courses #form #contact_us{
     text-align: center;
   }
-
 #body-english-courses .price-h2-div{
   width: 100%;
 }
@@ -253,12 +252,7 @@
       #body-english-courses #form{
        width: 100%;
       }
-      #body-english-courses #price-table-individual {
-        width: 100%;
-    }
-    #body-english-courses .price-h2-div{
-      width: 100%;
-    }
+    
     .courses-priceTable-div{
       width: 100%;
     }

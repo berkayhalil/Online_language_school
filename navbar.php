@@ -11,9 +11,9 @@
             <a class="dropbtn" onclick="toggleDropdown()"> <i class="fa fa-caret-down"></i><span
                     class="navbar-text">КУРСОВЕ</span></a>
             <div class="dropdown-content">
-                <a href="#course1">Започващи курсове</a>
+                <!-- <a href="#course1">Започващи курсове</a>-->
                 <a href="/english-courses">Курсове по английски език</a>
-                <a href="german-courses.php">Курсове по немски език</a>
+                <a href="/german-courses">Курсове по немски език</a>
             </div>
         </div>
 
