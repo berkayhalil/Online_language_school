@@ -5,6 +5,7 @@
 <head>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <base href="/Online_language_school/">
+
     <link rel="stylesheet" href="css.folder/styles.css">
     <link href="https://fonts.googleapis.com/css?family=Dosis:700" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">

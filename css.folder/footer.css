@@ -1,39 +1,42 @@
-footer{
+footer {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: center;
-   /* background-image: linear-gradient(to right, #083E85, #075c94,  #083E85);*/
-   background-color: var(--main-body-dark-color);
-   margin: 0;
+    align-items: center;
+    /* background-image: linear-gradient(to right, #083E85, #075c94,  #083E85);*/
+    background-color: var(--main-body-dark-color);
+    margin: 0;
 }
 
-#footer-main-div{
+#footer-main-div {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 300px;
+    margin-bottom: 10px;
 }
 
 
-#footer-div-contacts{
+#footer-div-contacts {
     display: flex;
     text-align: center;
     flex-direction: column;
 }
 
-.footer-h4{
+.footer-h4 {
     color: var(--text-color);
     margin-bottom: -5px;
 }
 
-#footer-div-courses{
+#footer-div-courses {
     display: flex;
     text-align: center;
     flex-direction: column;
     justify-content: center;
 }
-#bottom-div{
+
+#bottom-div {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -42,23 +45,43 @@ footer{
     padding: 0;
 }
 
-#bottom-p{
+#bottom-p {
     font-size: 13px;
     margin: 0;
     text-align: center;
 }
 
-.footer-text{
+.footer-text {
     color: var(--text-color);
 }
 
-#footer-main-div a{
+#footer-main-div a {
     text-decoration: none;
 }
 
+.footer-div-courses-links {
+    gap: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+.white-color{
+    color: white;
+    text-decoration: none;
+}
+
+.footer-div-copyright{
+    margin-top:10px;
+}
 @media screen and (max-width: 800px) {
-    #footer-main-div{
+    #footer-main-div {
         flex-direction: column;
-        gap: 10px
+        gap: 0px
+    }
+    .footer-text{
+        margin-top: 40px;
     }
 }
